@@ -29,7 +29,8 @@ chamber_a:setPitch(12.9);
 
 function chamber_a_tp(data)
   local player = Player:new(data.player);
-    player:teleport(chamber_a);
+      player:teleport(chamber_a);
+      player:addPermission("runsafe.chambers.alpha");
 end
 
   registerHook("REGION_ENTER", "chamber_a_tp", "chambers-chamber_a");
