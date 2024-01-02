@@ -19,17 +19,6 @@ end
 
   registerHook("REGION_ENTER", "c_fall", "chambers-catch_fall");
 
-function respawn_chambers(data)
-             local player = Player:new(data.player);
-              if not player:hasPermission("runsafe.chambers.alpha") then
-                player:setHealth(20);
-                player:teleport(c_spawn);
-
-      end
-   end
-
-registerHook("PLAYER_DEATH", "respawn_chambers", "chambers");
-
 ----------------
 --Chamber tp's--
 ----------------
