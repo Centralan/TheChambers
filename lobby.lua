@@ -47,8 +47,3 @@ function chamber_a_tp(data)
 end
 
   registerHook("REGION_ENTER", "chamber_a_tp", "chambers-chamber_a")
-
-  registerHook("REGION_ENTER", "chamber_a_tp", "chambers-chamber_a");
-
-
-  registerHook("REGION_ENTER", "chamber_a_tp", "chambers-chamber_a");
