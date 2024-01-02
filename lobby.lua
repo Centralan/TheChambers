@@ -43,8 +43,10 @@ function chamber_a_tp(data)
     player:teleport(chamber_a);
     player:addPermission("runsafe.chambers.alpha");
     player:sendTitle("Welcome To", "Chamber Alpha");
-    Player:playSound('ENTITY_EVOCATION_ILLAGER_CAST_SPELL', 1, 0.5);
+    player:playSound('ENTITY_EVOCATION_ILLAGER_CAST_SPELL', 1, 0.5);
 end
+
+  registerHook("REGION_ENTER", "chamber_a_tp", "chambers-chamber_a")
 
   registerHook("REGION_ENTER", "chamber_a_tp", "chambers-chamber_a");
 
