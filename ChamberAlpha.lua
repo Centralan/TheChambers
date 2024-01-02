@@ -16,7 +16,7 @@ function respawn_alpha(data)
 
 registerHook("PLAYER_DEATH", "respawn_alpha", "chambers");
 
---Death
+--Alpha 1
 
 function chamer_a_1(data)
         local player = Player:new(data.player);
