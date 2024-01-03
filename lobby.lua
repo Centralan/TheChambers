@@ -1,8 +1,9 @@
--------------------
---Worlds / sounds--
--------------------
+-------------------------------
+--Worlds / sounds / Messaging--
+-------------------------------
 
 local world = World:new('chambers');
+local bot = AI:new("DOG", "AI", "Chambers");
 
 ---------
 --Catch--
