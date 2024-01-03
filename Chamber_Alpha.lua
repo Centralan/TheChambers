@@ -59,3 +59,33 @@ registerHook("REGION_ENTER", "chamer_a_2", "chambers-a_32");
 registerHook("REGION_ENTER", "chamer_a_2", "chambers-a_33");
 registerHook("REGION_ENTER", "chamer_a_2", "chambers-a_34");
 registerHook("REGION_ENTER", "chamer_a_2", "chambers-a_35");
+
+--Alpha 3
+
+function chamer_a_3(data)
+        local player = Player:new(data.player);
+        player:setHealth(20);
+                player:teleport(chamber_a);
+	        player:sendMessage("&7You can feel time passing at an alarming rate...");
+                player:playSound('ITEM_CHORUS_FRUIT_TELEPORT', 1, 0.5);
+end
+
+registerHook("REGION_ENTER", "chamer_a_3", "chambers-a_36");
+registerHook("REGION_ENTER", "chamer_a_3", "chambers-a_37");
+registerHook("REGION_ENTER", "chamer_a_3", "chambers-a_38");
+registerHook("REGION_ENTER", "chamer_a_3", "chambers-a_39");
+registerHook("REGION_ENTER", "chamer_a_3", "chambers-a_40");
+registerHook("REGION_ENTER", "chamer_a_3", "chambers-a_41");
+registerHook("REGION_ENTER", "chamer_a_3", "chambers-a_42");
+registerHook("REGION_ENTER", "chamer_a_3", "chambers-a_43");
+registerHook("REGION_ENTER", "chamer_a_3", "chambers-a_44");
+registerHook("REGION_ENTER", "chamer_a_3", "chambers-a_45");
+registerHook("REGION_ENTER", "chamer_a_3", "chambers-a_46");
+registerHook("REGION_ENTER", "chamer_a_3", "chambers-a_47");
+registerHook("REGION_ENTER", "chamer_a_3", "chambers-a_48");
+registerHook("REGION_ENTER", "chamer_a_3", "chambers-a_49");
+registerHook("REGION_ENTER", "chamer_a_3", "chambers-a_50");
+registerHook("REGION_ENTER", "chamer_a_3", "chambers-a_51");
+registerHook("REGION_ENTER", "chamer_a_3", "chambers-a_52");
+registerHook("REGION_ENTER", "chamer_a_3", "chambers-a_53");
+registerHook("REGION_ENTER", "chamer_a_3", "chambers-a_54");
