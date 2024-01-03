@@ -37,3 +37,16 @@ function chamber_a_tp(data)
 end
 
   registerHook("REGION_ENTER", "chamber_a_tp", "chambers-chamber_a")
+
+----------------
+--Chamber Check--
+----------------
+
+local sign = Location:new(world, 5028.0, 91.0, 509.0);
+
+function chambers_sign(data)
+	local player = Player:new(data.player);
+        sign:setSign('Chamber Status:', player.name, '', '');
+end
+
+registerHook("REGION_ENTER", "chambers_sign", "chambers-chamber_check");
