@@ -2,25 +2,13 @@
 --Chamber Alpha --
 ------------------
 
---Respawning
-
-function respawn_alpha(data)
-             local player = Player:new(data.player);
-              if player:hasPermission("runsafe.chambers.alpha") then
-                player:setHealth(20);
-                player:teleport(chamber_a);
-	              player:sendMessage("&7You feel a little more crazy...");
-
-      end
-   end
-
-registerHook("PLAYER_DEATH", "respawn_alpha", "chambers");
-
 --Alpha 1
 
 function chamer_a_1(data)
         local player = Player:new(data.player);
-        player:setHealth(0);
+        player:setHealth(20);
+                player:teleport(chamber_a);
+	              player:sendMessage("&7You feel a little more crazy...");
 end
 
 registerHook("REGION_ENTER", "chamer_a_1", "chambers-a_1");
