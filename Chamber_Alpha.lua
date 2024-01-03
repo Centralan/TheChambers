@@ -8,8 +8,10 @@ function chamer_a_1(data)
         local player = Player:new(data.player);
         player:setHealth(20);
                 player:teleport(chamber_a);
-	              player:sendMessage("&7You feel a little more crazy...");
+	        player:sendMessage("&7You feel a little more crazy...");
+                player:playSound('ITEM_CHORUS_FRUIT_TELEPORT', 1, 0.5);
 end
+
 
 registerHook("REGION_ENTER", "chamer_a_1", "chambers-a_1");
 registerHook("REGION_ENTER", "chamer_a_1", "chambers-a_2");
