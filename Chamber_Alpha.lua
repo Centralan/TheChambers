@@ -89,3 +89,16 @@ registerHook("REGION_ENTER", "chamer_a_3", "chambers-a_51");
 registerHook("REGION_ENTER", "chamer_a_3", "chambers-a_52");
 registerHook("REGION_ENTER", "chamer_a_3", "chambers-a_53");
 registerHook("REGION_ENTER", "chamer_a_3", "chambers-a_54");
+
+--Alpha Complete
+
+function chamer_a_complete(data)
+        local player = Player:new(data.player);
+                player:setHealth(20);
+                player:teleport(c_spawn);
+	        bot:speak( player.name .. " has completed &6Chamber Alpha&f.");
+                player:playSound('UI_TOAST_CHALLENGE_COMPLETE', 1, 1);
+	        player:addPermission("runsafe.chambers.alpha"); 
+end
+
+registerHook("REGION_ENTER", "chamer_a_complete", "chambers-a_complete");
