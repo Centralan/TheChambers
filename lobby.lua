@@ -31,8 +31,8 @@ chamber_a:setYaw(-178.8);
 chamber_a:setPitch(12.9);
 
 local chamber_b = Location:new(world, 5000.0, 100.0, 1200.0);
-chamber_b:setYaw(89.8);
-chamber_b:setPitch(6.3);
+chamber_b:setYaw(-0.3);
+chamber_b:setPitch(0.3);
 
 local chamber_c = Location:new(world, 5000.657, 100.0, 1500.570);
 chamber_c:setYaw(-89.4);
