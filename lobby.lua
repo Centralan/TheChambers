@@ -24,6 +24,8 @@ end
 --Chamber tp's--
 ----------------
 
+local b1chest = Location:new(world, 5000, 107, 1196);
+
 local chamber_a = Location:new(world, 5000.0, 100.0, 1000.0);
 chamber_a:setYaw(-178.8);
 chamber_a:setPitch(12.9);
@@ -43,11 +45,13 @@ function chamber_b_tp(data)
   local player = Player:new(data.player);
     player:teleport(chamber_b);
     player:sendTitle("Welcome To", "Chamber Bravo");
+    b1chest:cloneChestToPlayer(player.name);
     player:playSound('ENTITY_EVOCATION_ILLAGER_CAST_SPELL', 1, 0.5);
 end
 
 registerHook("REGION_ENTER", "chamber_a_tp", "chambers-chamber_a")
 registerHook("REGION_ENTER", "chamber_b_tp", "chambers-chamber_b")
+
 
 ----------------
 --Chamber Check--
