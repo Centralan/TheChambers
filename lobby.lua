@@ -31,8 +31,12 @@ chamber_a:setYaw(-178.8);
 chamber_a:setPitch(12.9);
 
 local chamber_b = Location:new(world, 5000.0, 100.0, 1200.0);
-chamber_a:setYaw(89.8);
-chamber_a:setPitch(6.3);
+chamber_b:setYaw(89.8);
+chamber_b:setPitch(6.3);
+
+local chamber_c = Location:new(world, 5000.657, 100.0, 1500.570);
+chamber_c:setYaw(-89.4);
+chamber_c:setPitch(4.8);
 
 function chamber_a_tp(data)
   local player = Player:new(data.player);
@@ -49,8 +53,16 @@ function chamber_b_tp(data)
     player:playSound('ENTITY_EVOCATION_ILLAGER_CAST_SPELL', 1, 0.5);
 end
 
+function chamber_c_tp(data)
+  local player = Player:new(data.player);
+    player:teleport(chamber_c);
+    player:sendTitle("Welcome To", "Chamber Charlie");
+    player:playSound('ENTITY_EVOCATION_ILLAGER_CAST_SPELL', 1, 0.5);
+end
+
 registerHook("REGION_ENTER", "chamber_a_tp", "chambers-chamber_a")
 registerHook("REGION_ENTER", "chamber_b_tp", "chambers-chamber_b")
+registerHook("REGION_ENTER", "chamber_c_tp", "chambers-chamber_c")
 
 
 ----------------
