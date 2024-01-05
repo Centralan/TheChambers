@@ -43,6 +43,13 @@ function b1__1_setair()
 end
 end
 
+function b1_1_setbars()
+        for index, key in ipairs(bars1blocks) do
+                key:setBlock(101, bars1current);
+end
+end
+
+
 registerHook("BLOCK_GAINS_CURRENT", "b1__1_setair", "chambers", 4991.0, 101, 1196);
 registerHook("REGION_ENTER", "b1_1_setbars", "chambers-b1_closegate");
 
@@ -52,4 +59,96 @@ function b1_1_clearinv(data)
 end
 
 registerHook("REGION_ENTER", "b1_1_clearinv", "chambers-b1_closegate");
+
+local world = "chambers";
+local bars2current = 1;
+local bars2maxData = 1;
+local bars2blocks = {
+        Location:new(world, 5005.0, 102.0, 1224.0),
+        Location:new(world, 5005.0, 102.0, 1223.0),
+        Location:new(world, 5005.0, 102.0, 1222.0),
+        Location:new(world, 5005.0, 102.0, 1221.0),
+        Location:new(world, 5005.0, 102.0, 1220.0),
+        Location:new(world, 5005.0, 101.0, 1224.0),
+        Location:new(world, 5005.0, 101.0, 1223.0),
+        Location:new(world, 5005.0, 101.0, 1222.0),
+        Location:new(world, 5005.0, 101.0, 1221.0),
+        Location:new(world, 5005.0, 101.0, 1220.0),
+        Location:new(world, 5005.0, 100.0, 1224.0),
+        Location:new(world, 5005.0, 100.0, 1223.0),
+        Location:new(world, 5005.0, 100.0, 1222.0),
+        Location:new(world, 5005.0, 100.0, 1221.0),
+        Location:new(world, 5005.0, 100.0, 1220.0),
+
+};
+
+function b1__2_start(data)
+        if bars2current == bars2maxData then
+                bars2current = 1;
+        else
+                bars2current = bars2current + 1;
+        end
+        b1__2_setair();
+end
+
+function b1__2_setair()
+        for index, key in ipairs(bars2blocks) do
+                key:setBlock(0, bars2current);
+end
+end
+
+function b1_2_setbars()
+        for index, key in ipairs(bars2blocks) do
+                key:setBlock(101, bars2current);
+end
+end
+
+registerHook("BLOCK_GAINS_CURRENT", "b1__2_setair", "chambers", 5003.0, 107.0, 1217.0);
+registerHook("BLOCK_GAINS_CURRENT", "b1_2_setbars", "chambers", 5003.0, 107.0, 1221.0);
+
+local world = "chambers";
+local bars3current = 1;
+local bars3maxData = 1;
+local bars3blocks = {
+        Location:new(world, 4995.0, 102.0, 1220.0),
+        Location:new(world, 4995.0, 102.0, 1221.0),
+        Location:new(world, 4995.0, 102.0, 1222.0),
+        Location:new(world, 4995.0, 102.0, 1223.0),
+        Location:new(world, 4995.0, 102.0, 1224.0),
+        Location:new(world, 4995.0, 101.0, 1220.0),
+        Location:new(world, 4995.0, 101.0, 1221.0),
+        Location:new(world, 4995.0, 101.0, 1222.0),
+        Location:new(world, 4995.0, 101.0, 1223.0),
+        Location:new(world, 4995.0, 101.0, 1224.0),
+        Location:new(world, 4995.0, 100.0, 1220.0),
+        Location:new(world, 4995.0, 100.0, 1221.0),
+        Location:new(world, 4995.0, 100.0, 1222.0),
+        Location:new(world, 4995.0, 100.0, 1223.0),
+        Location:new(world, 4995.0, 100.0, 1224.0),
+
+};
+
+function b1__3_start(data)
+        if bars3current == bars3maxData then
+                bars3current = 1;
+        else
+                bars3current = bars3current + 1;
+        end
+        b1__3_setair();
+end
+
+function b1__3_setair()
+        for index, key in ipairs(bars3blocks) do
+                key:setBlock(0, bars3current);
+end
+end
+
+function b1_3_setbars()
+        for index, key in ipairs(bars3blocks) do
+                key:setBlock(101, bars3current);
+end
+end
+
+registerHook("BLOCK_GAINS_CURRENT", "b1__3_setair", "chambers", 4998.0, 107.0, 1221.0);
+registerHook("BLOCK_GAINS_CURRENT", "b1_3_setbars", "chambers", 4998.0, 107.0, 1217.0);
 
