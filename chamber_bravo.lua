@@ -207,6 +207,7 @@ local portal2 = Location:new(world, 4999.519, 70.00, 1241.536)
 portal2:setYaw(-0.4);
 portal2:setPitch(2.6);
 
+
 local function hasPrefix(subject, prefix)
 	return string.sub(subject, 1, string.len(prefix)) == prefix;
 end
@@ -214,6 +215,31 @@ end
 local function splitPlayerName(message, len)
 	return string.sub(message, len, string.len(message));
 end
+
+function maze1_reset(data)
+         local player = Player:new(data.player);
+	 if player:hasPermission("runsafe.chambers.1") then
+		local message = data.message;
+		if hasPrefix(message, "stuck") then
+			local playerName = splitPlayerName(message, 16);
+			   player:teleport(portal1);
+
+			end
+		end
+	end
+
+function maze2_reset(data)
+         local player = Player:new(data.player);
+	 if player:hasPermission("runsafe.chambers.2") then
+		local message = data.message;
+		if hasPrefix(message, "stuck") then
+			local playerName = splitPlayerName(message, 16);
+			   player:teleport(portal2);
+
+			end
+		end
+	end
+
 
 function b2_start1(data)
 	local player = Player:new(data.player);
@@ -229,30 +255,6 @@ function b2_start2(data)
         player:sendTitle("", "Type 'stuck' to reset");
 end
 
-function b2_1reset(data)
-	 if player:hasPermission("runsafe.chambers.1") then
-		local player = Player:new(data.player);
-		local message = data.message;
-		if hasPrefix(message, "stuck") then
-			local playerName = splitPlayerName(message, 16);
-			   player:teleport(portal1);
-			end
-		end
-	end
-end
-
-function b2_2reset(data)
-	 if player:hasPermission("runsafe.chambers.2") then
-		local player = Player:new(data.player);
-		local message = data.message;
-		if hasPrefix(message, "stuck") then
-			local playerName = splitPlayerName(message, 16);
-			   player:teleport(portal2);
-			end
-		end
-	end
-end
-
 function b2_clear(data)
 	local player = Player:new(data.player);
         player:removePermission("runsafe.chambers.1");
@@ -262,7 +264,8 @@ end
 
 registerHook("REGION_ENTER", "b2_start1", "chambers-b2_portal1");
 registerHook("REGION_ENTER", "b2_start2", "chambers-b2_portal2");
-registerHook("CHAT_MESSAGE", "b2_1reset", "chambers");
-registerHook("CHAT_MESSAGE", "b2_2reset", "chambers");
+registerHook("CHAT_MESSAGE", "maze1_reset", "chambers");
+registerHook("CHAT_MESSAGE", "maze2_reset", "chambers");
 registerHook("REGION_LEAVE", "b2_clear", "chambers-b2_maze");
+
 
