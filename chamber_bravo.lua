@@ -149,6 +149,52 @@ function b1_3_setbars()
 end
 end
 
-registerHook("BLOCK_GAINS_CURRENT", "b1__3_setair", "chambers", 4998.0, 107.0, 1221.0);
-registerHook("BLOCK_GAINS_CURRENT", "b1_3_setbars", "chambers", 4998.0, 107.0, 1217.0);
+registerHook("BLOCK_GAINS_CURRENT", "b1__3_setair", "chambers", 5003.0, 107.0, 1212.0);
+registerHook("BLOCK_GAINS_CURRENT", "b1_3_setlava", "chambers", 4999.0, 107.0, 1212.0);
+
+local world = "chambers";
+local lava1current = 1;
+local lava1maxData = 1;
+local lava1blocks = {
+        Location:new(world, 4998.0, 103.0, 1228.0),
+        Location:new(world, 4999.0, 103.0, 1228.0),
+        Location:new(world, 5000.0, 103.0, 1228.0),
+        Location:new(world, 5001.0, 103.0, 1228.0),
+        Location:new(world, 5002.0, 103.0, 1228.0),
+        Location:new(world, 4998.0, 102.0, 1228.0),
+        Location:new(world, 4999.0, 102.0, 1228.0),
+        Location:new(world, 5000.0, 102.0, 1228.0),
+        Location:new(world, 5001.0, 102.0, 1228.0),
+        Location:new(world, 5002.0, 102.0, 1228.0),
+        Location:new(world, 4998.0, 101.0, 1228.0),
+        Location:new(world, 4999.0, 101.0, 1228.0),
+        Location:new(world, 5000.0, 101.0, 1228.0),
+        Location:new(world, 5001.0, 101.0, 1228.0),
+        Location:new(world, 5002.0, 101.0, 1228.0),
+
+};
+
+function b2_1(data)
+        if lava1current == lava1maxData then
+                lava1current = 1;
+        else
+                lava1current = lava1current + 1;
+        end
+        b2_1_setair();
+end
+
+function b2_1_setair()
+        for index, key in ipairs(lava1blocks) do
+                key:setBlock(0, lava1current);
+end
+end
+
+function b2_1_setlava()
+        for index, key in ipairs(lava1blocks) do
+                key:setBlock(10, lava1current);
+end
+end
+
+registerHook("BLOCK_GAINS_CURRENT", "b2_1_setair", "chambers", 5003.0, 107.0, 1230.0);
+registerHook("BLOCK_GAINS_CURRENT", "b2_1_setlava", "chambers", 4998.0, 107.0, 1230.0);
 
