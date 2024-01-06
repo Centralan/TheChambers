@@ -145,6 +145,14 @@ function chambers_sign_i2(data)
 	end
 end
 
+function chambers_sign_sound(data)
+	local player = Player:new(data.player);
+	player:playSound('ENTITY_EVOCATION_ILLAGER_CAST_SPELL', 1, 0.5);;
+end
+
+registerHook("REGION_ENTER", "chambers_sign_sound", "chambers-chamber_check");
+registerHook("REGION_ENTER", "chambers_sign_sound", "chambers-chamber_check2");
+
 registerHook("REGION_ENTER", "chambers_sign_a1", "chambers-chamber_check");
 registerHook("REGION_ENTER", "chambers_sign_a2", "chambers-chamber_check");
 
