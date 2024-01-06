@@ -268,4 +268,16 @@ registerHook("CHAT_MESSAGE", "maze1_reset", "chambers");
 registerHook("CHAT_MESSAGE", "maze2_reset", "chambers");
 registerHook("REGION_LEAVE", "b2_clear", "chambers-b2_maze");
 
+function chamer_b_complete(data)
+        local player = Player:new(data.player);
+                player:setHealth(20);
+                player:teleport(c_spawn);
+	        bot:speak( player.name .. " has completed &6Chamber Bravo&f.");
+                player:playSound('UI_TOAST_CHALLENGE_COMPLETE', 1, 1);
+	        player:addPermission("runsafe.chambers.bravo"); 
+end
+
+registerHook("REGION_ENTER", "chamer_b_complete", "chambers-bravo_end1");
+registerHook("REGION_ENTER", "chamer_b_complete", "chambers-bravo_end2");
+
 
