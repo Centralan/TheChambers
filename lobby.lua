@@ -41,14 +41,14 @@ chamber_c:setPitch(4.8);
 function chamber_a_tp(data)
   local player = Player:new(data.player);
     player:teleport(chamber_a);
-    player:sendTitle("Welcome To", "Chamber Alpha");
+    player:sendTitle("Welcome To", "&bChamber Alpha");
     player:playSound('ENTITY_EVOCATION_ILLAGER_CAST_SPELL', 1, 0.5);
 end
 
 function chamber_b_tp(data)
   local player = Player:new(data.player);
     player:teleport(chamber_b);
-    player:sendTitle("Welcome To", "Chamber Bravo");
+    player:sendTitle("Welcome To", "&aChamber Bravo");
     b1chest:cloneChestToPlayer(player.name);
     player:playSound('ENTITY_EVOCATION_ILLAGER_CAST_SPELL', 1, 0.5);
 end
@@ -56,7 +56,7 @@ end
 function chamber_c_tp(data)
   local player = Player:new(data.player);
     player:teleport(chamber_c);
-    player:sendTitle("Welcome To", "Chamber Charlie");
+    player:sendTitle("Welcome To", "&eChamber Charlie");
     player:playSound('ENTITY_EVOCATION_ILLAGER_CAST_SPELL', 1, 0.5);
 end
 
