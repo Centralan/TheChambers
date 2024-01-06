@@ -64,7 +64,6 @@ registerHook("REGION_ENTER", "chamber_a_tp", "chambers-chamber_a")
 registerHook("REGION_ENTER", "chamber_b_tp", "chambers-chamber_b")
 registerHook("REGION_ENTER", "chamber_c_tp", "chambers-chamber_c")
 
-
 ----------------
 --Chamber Check--
 ----------------
@@ -73,7 +72,7 @@ local sign = Location:new(world, 5028.0, 91.0, 509.0);
 
 function chambers_sign(data)
 	local player = Player:new(data.player);
-        sign:setSign('Chamber Status:', player.name, '', '');
+        sign:setSign('Test Subject:', player.name, '', '');
 end
 
 registerHook("REGION_ENTER", "chambers_sign", "chambers-chamber_check");
