@@ -171,3 +171,30 @@ registerHook("REGION_ENTER", "chambers_sign_h2", "chambers-chamber_check");
 
 registerHook("REGION_ENTER", "chambers_sign_i1", "chambers-chamber_check");
 registerHook("REGION_ENTER", "chambers_sign_i2", "chambers-chamber_check");
+
+registerHook("REGION_ENTER", "chambers_sign_a1", "chambers-chamber_check2");
+registerHook("REGION_ENTER", "chambers_sign_a2", "chambers-chamber_check2");
+
+registerHook("REGION_ENTER", "chambers_sign_b1", "chambers-chamber_check2");
+registerHook("REGION_ENTER", "chambers_sign_b2", "chambers-chamber_check2");
+
+registerHook("REGION_ENTER", "chambers_sign_c1", "chambers-chamber_check2");
+registerHook("REGION_ENTER", "chambers_sign_c2", "chambers-chamber_check2");
+
+registerHook("REGION_ENTER", "chambers_sign_d1", "chambers-chamber_check2");
+registerHook("REGION_ENTER", "chambers_sign_d2", "chambers-chamber_check2");
+
+registerHook("REGION_ENTER", "chambers_sign_e1", "chambers-chamber_check2");
+registerHook("REGION_ENTER", "chambers_sign_e2", "chambers-chamber_check2");
+
+registerHook("REGION_ENTER", "chambers_sign_f1", "chambers-chamber_check2");
+registerHook("REGION_ENTER", "chambers_sign_f2", "chambers-chamber_check2");
+
+registerHook("REGION_ENTER", "chambers_sign_g1", "chambers-chamber_check2");
+registerHook("REGION_ENTER", "chambers_sign_g2", "chambers-chamber_check2");
+
+registerHook("REGION_ENTER", "chambers_sign_h1", "chambers-chamber_check2");
+registerHook("REGION_ENTER", "chambers_sign_h2", "chambers-chamber_check2");
+
+registerHook("REGION_ENTER", "chambers_sign_i1", "chambers-chamber_check2");
+registerHook("REGION_ENTER", "chambers_sign_i2", "chambers-chamber_check2");
