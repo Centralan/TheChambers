@@ -7,7 +7,7 @@ local bot = AI:new("ATLAS", "AI", "Chambers");;
 
 
 ----------------
---Easter Eggs --
+--  Rabbiton  --
 ----------------
 
 local rab = Location:new(world, 4904.625, 89.0, 312.509);
