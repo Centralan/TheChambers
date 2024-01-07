@@ -292,7 +292,7 @@ end
 function chambers_sign_sound(data)
 	local player = Player:new(data.player);
 	player:playSound('ENTITY_EVOCATION_ILLAGER_CAST_SPELL', 1, 0.5);
-	player:sendTitle("", "&5&k0&dThe podem reacts to you.&5&k0");
+	player:sendTitle("", "&5&k0&dThe podium reacts to you.&5&k0");
 end
 
 registerHook("REGION_ENTER", "chambers_sign_sound", "chambers-chamber_check");
