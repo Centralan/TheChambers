@@ -29,4 +29,4 @@ function rabbiton_date(data)
 	player:sendTitle("", "&c&k0&6Rabbiton Fell on October 5th, 2023&c&k0");
 end
 
-registerHook("REGION_ENTER", "rabbiton_date", "chambers-rab_1");
+registerHook("REGION_LEAVE", "rabbiton_date", "chambers-rab_1");
