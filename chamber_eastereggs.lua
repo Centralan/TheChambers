@@ -1,3 +1,11 @@
+-------------------------------
+--Worlds / Sounds / Messaging--
+-------------------------------
+
+local world = World:new('chambers');
+local bot = AI:new("ATLAS", "AI", "Chambers");;
+
+
 ----------------
 --Easter Eggs --
 ----------------
@@ -10,10 +18,11 @@ function rabbiton(data)
 	local player = Player:new(data.player);
         player:teleport(rab);
 	player:sendTitle("", "&5&k0&dIt feels just like a dream.&5&k0");
-	player:playSound('ENTITY_EVOCATION_ILLAGER_CAST_SPELL', 1, 0.5);
+        player:playSound('ENTITY_EVOCATION_ILLAGER_CAST_SPELL', 1, 0.5);
 end
 
 registerHook("REGION_ENTER", "rabbiton", "chambers-rab_easter");
+
 
 function rabbiton_date(data)
 	local player = Player:new(data.player);
