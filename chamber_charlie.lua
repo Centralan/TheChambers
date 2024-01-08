@@ -4,17 +4,9 @@
 
 --Charlie 1
 
-local c_respawn = Location:new(world, 5000.657, 100.0, 1500.570);
-c_respawn:setYaw(-89.5);
-c_respawn:setPitch(2.1);
-
-
 function chamber_c_respawn(data)
     local player = Player:new(data.player);
-      if player:hasPermission("runsafe.chambers.c") then
         player:setHealth(1);
-        player:teleport(c_respawn);
-        player:sendMessage("&7You feel a little more crazy...");
         EventEngine.player.addPotionEffect(player.name, 'FIRE_RESISTANCE', 100, 5);
 end
 end
@@ -25,13 +17,7 @@ function c_e_clear(data)
 end
 
 
-function c_p_clear(data)
-	local player = Player:new(data.player);
-        player:removePermission("runsafe.chambers.c");
-end
-
-registerHook("PLAYER_DEATH", "chamber_c_respawn", "chambers");
-registerHook("REGION_LEAVE", "c_p_clear", "chambers-chamber_charile");
+registerHook("REGION_ENTER", "chamber_c_respawn", "chambers-c_enter");
 registerHook("REGION_ENTER", "c_e_clear", "chambers-debuff_c");
 
   
