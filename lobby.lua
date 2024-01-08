@@ -51,7 +51,7 @@ end
 
 function lobby_tease2(data)
         local player = Player:new(data["player"]);
-	player:teleport(spawn_enter);
+	player:teleport(tease1);
 	player:sendTitle("", "&eThe &5void &cseeks &cjustification");
 	EventEngine.player.addPotionEffect(player.name, 'BLINDNESS', 100, 1000);
 end
