@@ -17,9 +17,26 @@ spawn_enter:setPitch(25.8);
 function spawn_portal_chamber(data)
   local player = Player:new(data.player);
         player:teleport(spawn_enter);
+	player:addPermission("runsafe.warp.use.chambers");
 end
 
+function welcome_1(data)
+        local player = Player:new(data["player"]);
+        EventEngine.player.addPotionEffect(player.name, 'BLINDNESS', 100, 4);
+	player:sendTitle("&a&lWelcome To", "&2&lThe Chambers");
+        player:playSound('ENTITY_SHULKER_AMBIENT', 1, 0.5);
+end
+
+function welcome_3(data)
+        local player = Player:new(data["player"]);
+	player:sendTitle("", "&6/chambers &fwill return you here");
+end
+
+
 registerHook("REGION_ENTER", "spawn_portal_chamber", "survival3-spawn_chambers_tp");
+registerHook("REGION_ENTER", "welcome_1", "chambers-welcome1");
+registerHook("REGION_ENTER", "welcome_3", "chambers-welcome3")
+
 
 ---------
 --Catch--
@@ -59,7 +76,7 @@ function chamber_a_tp(data)
   local player = Player:new(data.player);
     player:teleport(chamber_a);
     player:sendTitle("Welcome To", "&bChamber Alpha");
-    player:playSound('ENTITY_EVOCATION_ILLAGER_CAST_SPELL', 1, 0.5);
+    player:playSound('ENTITY_EVOCATION_ILLAGER_PREPARE_SUMMON', 1, 0.5);
 end
 
 function chamber_b_tp(data)
@@ -67,14 +84,14 @@ function chamber_b_tp(data)
     player:teleport(chamber_b);
     player:sendTitle("Welcome To", "&aChamber Bravo");
     b1chest:cloneChestToPlayer(player.name);
-    player:playSound('ENTITY_EVOCATION_ILLAGER_CAST_SPELL', 1, 0.5);
+    player:playSound('ENTITY_EVOCATION_ILLAGER_PREPARE_SUMMON', 1, 0.5);
 end
 
 function chamber_c_tp(data)
   local player = Player:new(data.player);
     player:teleport(chamber_c);
     player:sendTitle("Welcome To", "&eChamber Charlie");
-    player:playSound('ENTITY_EVOCATION_ILLAGER_CAST_SPELL', 1, 0.5);
+    player:playSound('ENTITY_EVOCATION_ILLAGER_PREPARE_SUMMON', 1, 0.5);
 end
 
 registerHook("REGION_ENTER", "chamber_a_tp", "chambers-chamber_a")
