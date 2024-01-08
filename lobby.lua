@@ -36,13 +36,13 @@ function lobby_map(data)
         local player = Player:new(data["player"]);
 	player:sendTitle("", "&eSomething reachs out from the &5void");
 	EventEngine.player.addPotionEffect(player.name, 'BLINDNESS', 100, 2);
-	player:playSound('ENTITY_EVOCATION_FANGS_ATTACK', 1, 0.5
+	player:playSound('ENTITY_EVOCATION_FANGS_ATTACK', 1, 0.5);
 end
 
 function lobby_tease(data)
         local player = Player:new(data["player"]);
 	player:sendTitle("", "Soon");
-	player:playSound('ENTITY_PARROT_IMITATE_VEX', 1, 0.5
+	player:playSound('ENTITY_PARROT_IMITATE_VEX', 1, 0.5);
 end
 
 
