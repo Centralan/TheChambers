@@ -48,7 +48,7 @@ end
 
 registerHook("REGION_ENTER", "spawn_portal_chamber", "survival3-spawn_chambers_tp");
 registerHook("REGION_ENTER", "lobby_map", "survival3-chambers_map");
-registerHook("REGION_ENTER", "lobby_map", "survival3-chambers_teaser");
+registerHook("REGION_ENTER", "lobby_tease", "survival3-chambers_teaser");
 registerHook("REGION_ENTER", "welcome_1", "chambers-welcome1");
 registerHook("REGION_ENTER", "welcome_3", "chambers-welcome3")
 
