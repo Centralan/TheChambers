@@ -15,7 +15,15 @@ function chamber_c_respawn(data)
         player:setHealth(1);
         player:teleport(c_respawn);
         player:sendMessage("&7You feel a little more crazy...");
+        EventEngine.player.addPotionEffect(player.name, 'FIRE_RESISTANCE', 100, 5);
 end
+end
+
+function c_e_clear(data)
+	local player = Player:new(data.player);
+        EventEngine.player.removePotionEffects(player.name, 'FIRE_RESISTANCE');
+end
+
 
 function c_p_clear(data)
 	local player = Player:new(data.player);
@@ -24,6 +32,8 @@ end
 
 registerHook("PLAYER_DEATH", "chamber_c_respawn", "chambers");
 registerHook("REGION_LEAVE", "c_p_clear", "chambers-chamber_charile");
+registerHook("REGION_ENTER", "c_e_clear", "chambers-debuff_c");
+
   
 local world = "chambers";
 local lava1current = 1;
