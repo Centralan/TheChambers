@@ -14,6 +14,10 @@ local spawn_enter = Location:new(world, 5000.491, 183.0, 500.597);
 spawn_enter:setYaw(128.0);
 spawn_enter:setPitch(25.8);
 
+local tease1 = Location:new(world2, 19631.513, 53.0, -20828.415);
+tease1:setYaw(-179.4);
+tease1:setPitch(9.8);
+
 function spawn_portal_chamber(data)
   local player = Player:new(data.player);
         player:teleport(spawn_enter);
@@ -45,10 +49,23 @@ function lobby_tease(data)
 	player:playSound('ENTITY_PARROT_IMITATE_VEX', 1, 0.5);
 end
 
+function lobby_tease2(data)
+        local player = Player:new(data["player"]);
+	player:teleport(spawn_enter);
+	player:sendTitle("", "&eThe &5void &cseeks &cjustification");
+	EventEngine.player.addPotionEffect(player.name, 'BLINDNESS', 100, 1000);
+end
+
+function e_blind_remove(data)
+        local player = Player:new(data.player);
+        EventEngine.player.removePotionEffects(player.name, 'BLINDNESS');
+end
 
 registerHook("REGION_ENTER", "spawn_portal_chamber", "survival3-spawn_chambers_tp");
 registerHook("REGION_ENTER", "lobby_map", "survival3-chambers_map");
 registerHook("REGION_ENTER", "lobby_tease", "survival3-chambers_teaser");
+registerHook("REGION_ENTER", "lobby_tease2", "survival3-chambers_e_1")
+registerHook("REGION_LEAVE", "e_blind_remove", "survival3-spawn_event_room")
 registerHook("REGION_ENTER", "welcome_1", "chambers-welcome1");
 registerHook("REGION_ENTER", "welcome_3", "chambers-welcome3")
 
