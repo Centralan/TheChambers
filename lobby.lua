@@ -3,7 +3,23 @@
 -------------------------------
 
 local world = World:new('chambers');
+local world2 = World:new('survival3');
 local bot = AI:new("ATLAS", "AI", "Chambers");
+
+---------
+--Enter--
+---------
+
+local spawn_enter = Location:new(world, 5000.491, 183.0, 500.597);
+spawn_enter:setYaw(128.0);
+spawn_enter:setPitch(25.8);
+
+function spawn_portal_chamber(data)
+  local player = Player:new(data.player);
+        player:teleport(spawn_enter);
+end
+
+registerHook("REGION_ENTER", "spawn_portal_chamber", "survival3-spawn_chambers_tp");
 
 ---------
 --Catch--
