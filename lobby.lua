@@ -85,6 +85,7 @@ end
 
   registerHook("REGION_ENTER", "c_fall", "chambers-catch_fall");
   registerHook("REGION_ENTER", "c_fall", "chambers-catch2"); --rabbition catch
+  registerHook("REGION_ENTER", "c_fall", "chambers-thall_catch"); --thall airship catch
 
 ----------------
 --Chamber tp's--
