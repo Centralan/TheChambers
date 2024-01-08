@@ -30,3 +30,21 @@ function rabbiton_date(data)
 end
 
 registerHook("REGION_LEAVE", "rabbiton_date", "chambers-rab_1");
+
+----------------
+--  Thall  --
+----------------
+
+local th = Location:new(world, 5064.205, 107.0, 320.108);
+th:setYaw(2.1);
+th:setPitch(-3.0);
+
+function thall(data)
+	local player = Player:new(data.player);
+        player:teleport(th);
+	player:sendTitle("", "&5&k0&dIt feels just like a dream.&5&k0");
+        player:playSound('ENTITY_EVOCATION_ILLAGER_CAST_SPELL', 1, 0.5);
+end
+
+
+registerHook("REGION_ENTER", "thall", "chambers-thall_easter");
