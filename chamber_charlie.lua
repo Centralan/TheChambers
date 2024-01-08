@@ -283,8 +283,8 @@ end
 end
 
 function c1_7_setair()
-        for index, key in ipairs(lava3blocks) do
-                key:setBlock(0, lava3current);
+        for index, key in ipairs(lava7blocks) do
+                key:setBlock(0, lava7current);
 end
 end
 
@@ -295,8 +295,8 @@ end
 end
 
 function c1_8_setair()
-        for index, key in ipairs(lava3blocks) do
-                key:setBlock(0, lava3current);
+        for index, key in ipairs(lava8blocks) do
+                key:setBlock(0, lava8current);
 end
 end
 
