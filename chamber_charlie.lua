@@ -7,6 +7,7 @@
 function chamber_c_respawn(data)
     local player = Player:new(data.player);
         player:setHealth(1);
+	player:setMode("ADVENTURE");
         EventEngine.player.addPotionEffect(player.name, 'FIRE_RESISTANCE', 100, 5);
 end
 end
