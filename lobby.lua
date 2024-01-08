@@ -124,6 +124,9 @@ function chamber_c_tp(data)
   local player = Player:new(data.player);
     player:teleport(chamber_c);
     player:sendTitle("Welcome To", "&eChamber Charlie");
+    player:addPermission("runsafe.chambers.c");
+    player:setMode("ADVENTURE");
+    player:setHealth(1);
     player:playSound('ENTITY_EVOCATION_ILLAGER_PREPARE_SUMMON', 1, 0.5);
 end
 
