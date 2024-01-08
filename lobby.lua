@@ -19,6 +19,7 @@ function c_fall(data)
 end
 
   registerHook("REGION_ENTER", "c_fall", "chambers-catch_fall");
+  registerHook("REGION_ENTER", "c_fall", "chambers-catch2"); --rabbition catch
 
 ----------------
 --Chamber tp's--
