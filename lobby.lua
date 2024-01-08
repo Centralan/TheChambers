@@ -32,8 +32,23 @@ function welcome_3(data)
 	player:sendTitle("", "&6/chambers &fwill return you here");
 end
 
+function lobby_map(data)
+        local player = Player:new(data["player"]);
+	player:sendTitle("", "&eSomething reachs out from the &5void");
+	EventEngine.player.addPotionEffect(player.name, 'BLINDNESS', 100, 2);
+	player:playSound('ENTITY_EVOCATION_FANGS_ATTACK', 1, 0.5
+end
+
+function lobby_tease(data)
+        local player = Player:new(data["player"]);
+	player:sendTitle("", "Soon");
+	player:playSound('ENTITY_PARROT_IMITATE_VEX', 1, 0.5
+end
+
 
 registerHook("REGION_ENTER", "spawn_portal_chamber", "survival3-spawn_chambers_tp");
+registerHook("REGION_ENTER", "lobby_map", "survival3-chambers_map");
+registerHook("REGION_ENTER", "lobby_map", "survival3-chambers_teaser");
 registerHook("REGION_ENTER", "welcome_1", "chambers-welcome1");
 registerHook("REGION_ENTER", "welcome_3", "chambers-welcome3")
 
