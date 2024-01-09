@@ -41,6 +41,7 @@ function lobby_map(data)
 	player:sendTitle("", "&eSomething reachs out from the &5void");
 	EventEngine.player.addPotionEffect(player.name, 'BLINDNESS', 100, 2);
 	player:playSound('ENTITY_EVOCATION_FANGS_ATTACK', 1, 0.5);
+	player:setHealth(14);
 end
 
 function lobby_tease(data)
