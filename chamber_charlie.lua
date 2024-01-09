@@ -326,6 +326,22 @@ registerHook("BLOCK_GAINS_CURRENT", "c1_7_setair", "chambers", 5008.0, 96.0, 149
 registerHook("BLOCK_GAINS_CURRENT", "c1_8_setlava", "chambers", 5007.0, 100.0, 1495.0);
 registerHook("BLOCK_GAINS_CURRENT", "c1_8_setair", "chambers", 5006.0, 96.0, 1495.0);
 
+function chamber_c_buff_1(data)
+    local player = Player:new(data.player);
+	player:setMode("ADVENTURE");
+        EventEngine.player.addPotionEffect(player.name, 'FIRE_RESISTANCE', 100, 20);
+	EventEngine.player.addPotionEffect(player.name, 'REGENERATION', 100, 20);
+end
+
+function chamber_c_debuff_2(data)
+    local player = Player:new(data.player);
+        player:setHealth(1);
+	player:setMode("ADVENTURE");
+        EventEngine.player.removePotionEffects(player.name, 'FIRE_RESISTANCE');
+end
+	
+registerHook("REGION_ENTER", "chamber_c_buff_1", "chambers-c1_end");
+registerHook("REGION_ENTER", "chamber_c_debuff_2", "chambers-c2_debuff");
 
 --Charlie 2
 
