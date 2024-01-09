@@ -1059,3 +1059,371 @@ local L25blocks = {
 
 };
 
+
+function c2__1_start(data)
+        if L1current == L1maxData then
+                L1current = 1;
+        else
+                L1current = l1current + 1;
+        end
+        c2__1_setair();
+end
+
+function c2_1_setair()
+        for index, key in ipairs(L1blocks) do
+                key:setBlock(0, L1current);
+end
+end
+
+function c2_1_setlava()
+        for index, key in ipairs(L1blocks) do
+                key:setBlock(10, L1current);
+end
+end
+
+function c2_2_setair()
+        for index, key in ipairs(L2blocks) do
+                key:setBlock(0, L2current);
+end
+end
+
+function c2_2_setlava()
+        for index, key in ipairs(L2blocks) do
+                key:setBlock(10, L2current);
+end
+end
+
+function c2_3_setair()
+        for index, key in ipairs(L3blocks) do
+                key:setBlock(0, L3current);
+end
+end
+
+function c2_3_setlava()
+        for index, key in ipairs(L3blocks) do
+                key:setBlock(10, L3current);
+end
+end
+
+function c2_4_setair()
+        for index, key in ipairs(L4blocks) do
+                key:setBlock(0, L4current);
+end
+end
+
+function c2_4_setlava()
+        for index, key in ipairs(L4blocks) do
+                key:setBlock(10, L4current);
+end
+end
+
+function c2_5_setair()
+        for index, key in ipairs(L5blocks) do
+                key:setBlock(0, L5current);
+end
+end
+
+function c2_5_setlava()
+        for index, key in ipairs(L5blocks) do
+                key:setBlock(10, L5current);
+end
+end
+
+function c2_6_setair()
+        for index, key in ipairs(L6blocks) do
+                key:setBlock(0, L6current);
+end
+end
+
+function c2_6_setlava()
+        for index, key in ipairs(L6blocks) do
+                key:setBlock(10, L6current);
+end
+end
+
+function c2_7_setair()
+        for index, key in ipairs(L7blocks) do
+                key:setBlock(0, L7current);
+end
+end
+
+function c2_7_setlava()
+        for index, key in ipairs(L7blocks) do
+                key:setBlock(10, L7current);
+end
+end
+
+function c2_8_setair()
+        for index, key in ipairs(L8blocks) do
+                key:setBlock(0, L8current);
+end
+end
+
+function c2_8_setlava()
+        for index, key in ipairs(L8blocks) do
+                key:setBlock(10, L8current);
+end
+end
+
+function c2_9_setair()
+        for index, key in ipairs(L9blocks) do
+                key:setBlock(0, L9current);
+end
+end
+
+function c2_9_setlava()
+        for index, key in ipairs(L9blocks) do
+                key:setBlock(10, L9current);
+end
+end
+
+function c2_10_setair()
+        for index, key in ipairs(L10blocks) do
+                key:setBlock(0, L10current);
+end
+end
+
+function c2_10_setlava()
+        for index, key in ipairs(L10blocks) do
+                key:setBlock(10, L10current);
+end
+end
+
+function c2_11_setair()
+        for index, key in ipairs(L11blocks) do
+                key:setBlock(0, L11current);
+end
+end
+
+function c2_11_setlava()
+        for index, key in ipairs(L11blocks) do
+                key:setBlock(10, L11current);
+end
+end
+
+function c2_12_setair()
+        for index, key in ipairs(L12blocks) do
+                key:setBlock(0, L12current);
+end
+end
+
+function c2_12_setlava()
+        for index, key in ipairs(L12blocks) do
+                key:setBlock(10, L12current);
+end
+end
+
+function c2_13_setair()
+        for index, key in ipairs(L13blocks) do
+                key:setBlock(0, L13current);
+end
+end
+
+function c2_13_setlava()
+        for index, key in ipairs(L13blocks) do
+                key:setBlock(10, L13current);
+end
+end
+
+function c2_14_setair()
+        for index, key in ipairs(L14blocks) do
+                key:setBlock(0, L14current);
+end
+end
+
+function c2_14_setlava()
+        for index, key in ipairs(L14blocks) do
+                key:setBlock(10, L14current);
+end
+end
+
+function c2_15_setair()
+        for index, key in ipairs(L15blocks) do
+                key:setBlock(0, L15current);
+end
+end
+
+function c2_15_setlava()
+        for index, key in ipairs(L15blocks) do
+                key:setBlock(10, L15current);
+end
+end
+
+function c2_16_setair()
+        for index, key in ipairs(L16blocks) do
+                key:setBlock(0, L16current);
+end
+end
+
+function c2_16_setlava()
+        for index, key in ipairs(L16blocks) do
+                key:setBlock(10, L16current);
+end
+end
+
+function c2_17_setair()
+        for index, key in ipairs(L17blocks) do
+                key:setBlock(0, L17current);
+end
+end
+
+function c2_17_setlava()
+        for index, key in ipairs(L17blocks) do
+                key:setBlock(10, L17current);
+end
+end
+
+function c2_18_setair()
+        for index, key in ipairs(L18blocks) do
+                key:setBlock(0, L18current);
+end
+end
+
+function c2_18_setlava()
+        for index, key in ipairs(L18blocks) do
+                key:setBlock(10, L18current);
+end
+end
+
+function c2_19_setair()
+        for index, key in ipairs(L19blocks) do
+                key:setBlock(0, L19current);
+end
+end
+
+function c2_19_setlava()
+        for index, key in ipairs(L19blocks) do
+                key:setBlock(10, L19current);
+end
+end
+
+function c2_20_setair()
+        for index, key in ipairs(L20blocks) do
+                key:setBlock(0, L20current);
+end
+end
+
+function c2_20_setlava()
+        for index, key in ipairs(L20blocks) do
+                key:setBlock(10, L20current);
+end
+end
+
+function c2_21_setair()
+        for index, key in ipairs(L21blocks) do
+                key:setBlock(0, L21current);
+end
+end
+
+function c2_21_setlava()
+        for index, key in ipairs(L21blocks) do
+                key:setBlock(10, L21current);
+end
+end
+
+function c2_22_setair()
+        for index, key in ipairs(L22blocks) do
+                key:setBlock(0, L22current);
+end
+end
+
+function c2_22_setlava()
+        for index, key in ipairs(L22blocks) do
+                key:setBlock(10, L22current);
+end
+end
+
+function c2_23_setair()
+        for index, key in ipairs(L23blocks) do
+                key:setBlock(0, L23current);
+end
+end
+
+function c2_23_setlava()
+        for index, key in ipairs(L23blocks) do
+                key:setBlock(10, L23current);
+end
+end
+
+function c2_24_setair()
+        for index, key in ipairs(L24blocks) do
+                key:setBlock(0, L24current);
+	end
+end
+
+function c2_24_setlava()
+        for index, key in ipairs(L24blocks) do
+                key:setBlock(10, L24current);
+end
+end
+
+function c2_25_setair()
+        for index, key in ipairs(L25blocks) do
+                key:setBlock(0, L25current);
+	end
+end
+
+function c2_25_setlava()
+        for index, key in ipairs(L25blocks) do
+                key:setBlock(10, L25current);
+end
+end
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_1_setlava", "chambers", 5031.0, 113.0, 1522.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_1_setair", "chambers", 5031.0, 109.0, 1523.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_2_setlava", "chambers", 5031.0, 113.0, 1520.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_2_setair", "chambers", 5031.0, 109.0, 1521.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_3_setlava", "chambers", 5031.0, 113.0, 1518.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_3_setair", "chambers", 5031.0, 109.0, 1519.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_4_setlava", "chambers", 5031.0, 113.0, 1516.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_4_setair", "chambers", 5031.0, 109.0, 1517.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_5_setlava", "chambers", 5031.0, 113.0, 1514.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_5_setair", "chambers", 5031.0, 109.0, 1515.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_6_setlava", "chambers", 5031.0, 113.0, 1512.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_6_setair", "chambers", 5031.0, 109.0, 1513.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_7_setlava", "chambers", 5031.0, 113.0, 1510.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_7_setair", "chambers", 5031.0, 109.0, 1511.0);
+
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_8_setlava", "chambers", 5031.0, 113.0, 1508.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_8_setair", "chambers", 5031.0, 109.0, 1509.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_9_setlava", "chambers", 5031.0, 113.0, 1506.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_9_setair", "chambers", 5031.0, 109.0, 1507.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_10_setlava", "chambers", 5031.0, 113.0, 1504.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_10_setair", "chambers", 5031.0, 109.0, 1505.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_11_setlava", "chambers", 5031.0, 113.0, 1502.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_11_setair", "chambers", 5031.0, 109.0, 1503.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_12_setlava", "chambers", 5031.0, 113.0, 1500.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_12_setair", "chambers", 5031.0, 109.0, 1501.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_13_setlava", "chambers", 5031.0, 113.0, 1498.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_13_setair", "chambers", 5031.0, 109.0, 1499.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_14_setlava", "chambers", 5031.0, 113.0, 1496.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_14_setair", "chambers", 5031.0, 109.0, 1497.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_15_setlava", "chambers", 5031.0, 113.0, 1494.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_15_setair", "chambers", 5031.0, 109.0, 1495.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_16_setlava", "chambers", 5031.0, 113.0, 1492.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_16_setair", "chambers", 5031.0, 109.0, 1493.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_17_setlava", "chambers", 5031.0, 113.0, 1490.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_17_setair", "chambers", 5031.0, 109.0, 1491.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_18_setlava", "chambers", 5031.0, 113.0, 1488.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_18_setair", "chambers", 5031.0, 109.0, 1489.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_19_setlava", "chambers", 5031.0, 113.0, 1486.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_19_setair", "chambers", 5031.0, 109.0, 1487.0);
+
