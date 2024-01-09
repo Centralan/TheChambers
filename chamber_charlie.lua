@@ -1006,9 +1006,9 @@ local L23blocks = {
 };
 
 local world = "chambers";
-local L23current = 1;
-local L23maxData = 1;
-local L23blocks = {
+local L24current = 1;
+local L24maxData = 1;
+local L24blocks = {
         Location:new(world, 5048.0, 103.0, 1490.0),
         Location:new(world, 5048.0, 103.0, 1489.0),
         Location:new(world, 5048.0, 103.0, 1488.0),
@@ -1029,6 +1029,33 @@ local L23blocks = {
         Location:new(world, 5048.0, 100.0, 1488.0),
         Location:new(world, 5048.0, 100.0, 1487.0),
         Location:new(world, 5048.0, 100.0, 1486.0),
+
+};
+
+local world = "chambers";
+local L25current = 1;
+local L25maxData = 1;
+local L25blocks = {
+        Location:new(world, 5050.0, 103.0, 1490.0),
+        Location:new(world, 5050.0, 103.0, 1489.0),
+        Location:new(world, 5050.0, 103.0, 1488.0),
+        Location:new(world, 5050.0, 103.0, 1487.0),
+        Location:new(world, 5050.0, 103.0, 1486.0),
+        Location:new(world, 5050.0, 102.0, 1490.0),
+        Location:new(world, 5050.0, 102.0, 1489.0),
+        Location:new(world, 5050.0, 102.0, 1488.0),
+        Location:new(world, 5050.0, 102.0, 1487.0),
+        Location:new(world, 5050.0, 102.0, 1486.0),
+        Location:new(world, 5050.0, 101.0, 1490.0),
+        Location:new(world, 5050.0, 101.0, 1489.0),
+        Location:new(world, 5050.0, 101.0, 1488.0),
+        Location:new(world, 5050.0, 101.0, 1487.0),
+        Location:new(world, 5050.0, 101.0, 1486.0),
+	Location:new(world, 5050.0, 100.0, 1490.0),
+        Location:new(world, 5050.0, 100.0, 1489.0),
+        Location:new(world, 5050.0, 100.0, 1488.0),
+        Location:new(world, 5050.0, 100.0, 1487.0),
+        Location:new(world, 5050.0, 100.0, 1486.0),
 
 };
 
