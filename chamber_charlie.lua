@@ -817,9 +817,9 @@ local L18blocks = {
 };
 
 local world = "chambers";
-local L18current = 1;
-local L18maxData = 1;
-local L18blocks = {
+local L19current = 1;
+local L19maxData = 1;
+local L19blocks = {
         Location:new(world, 5035.0, 103.0, 1487.0),
         Location:new(world, 5034.0, 103.0, 1487.0),
         Location:new(world, 5033.0, 103.0, 1487.0),
@@ -844,9 +844,9 @@ local L18blocks = {
 };
 
 local world = "chambers";
-local L18current = 1;
-local L18maxData = 1;
-local L18blocks = {
+local L20current = 1;
+local L20maxData = 1;
+local L20blocks = {
         Location:new(world, 5036.0, 103.0, 1490.0),
         Location:new(world, 5036.0, 103.0, 1489.0),
         Location:new(world, 5036.0, 103.0, 1488.0),
@@ -871,9 +871,9 @@ local L18blocks = {
 };
 
 local world = "chambers";
-local L19current = 1;
-local L19maxData = 1;
-local L19blocks = {
+local L21current = 1;
+local L21maxData = 1;
+local L21blocks = {
         Location:new(world, 5038.0, 103.0, 1490.0),
         Location:new(world, 5038.0, 103.0, 1489.0),
         Location:new(world, 5038.0, 103.0, 1488.0),
@@ -898,9 +898,9 @@ local L19blocks = {
 };
 
 local world = "chambers";
-local L20current = 1;
-local L20maxData = 1;
-local L20blocks = {
+local L22current = 1;
+local L22maxData = 1;
+local L22blocks = {
         Location:new(world, 5040.0, 103.0, 1490.0),
         Location:new(world, 5040.0, 103.0, 1489.0),
         Location:new(world, 5040.0, 103.0, 1488.0),
@@ -925,9 +925,9 @@ local L20blocks = {
 };
 
 local world = "chambers";
-local L21current = 1;
-local L21maxData = 1;
-local L21blocks = {
+local L23current = 1;
+local L23maxData = 1;
+local L23blocks = {
         Location:new(world, 5042.0, 103.0, 1490.0),
         Location:new(world, 5042.0, 103.0, 1489.0),
         Location:new(world, 5042.0, 103.0, 1488.0),
@@ -952,9 +952,9 @@ local L21blocks = {
 };
 
 local world = "chambers";
-local L22current = 1;
-local L22maxData = 1;
-local L22blocks = {
+local L24current = 1;
+local L24maxData = 1;
+local L24blocks = {
         Location:new(world, 5044.0, 103.0, 1490.0),
         Location:new(world, 5044.0, 103.0, 1489.0),
         Location:new(world, 5044.0, 103.0, 1488.0),
@@ -979,9 +979,9 @@ local L22blocks = {
 };
 
 local world = "chambers";
-local L23current = 1;
-local L23maxData = 1;
-local L23blocks = {
+local L25current = 1;
+local L25maxData = 1;
+local L25blocks = {
         Location:new(world, 5046.0, 103.0, 1490.0),
         Location:new(world, 5046.0, 103.0, 1489.0),
         Location:new(world, 5046.0, 103.0, 1488.0),
@@ -1006,9 +1006,9 @@ local L23blocks = {
 };
 
 local world = "chambers";
-local L24current = 1;
-local L24maxData = 1;
-local L24blocks = {
+local L26current = 1;
+local L26maxData = 1;
+local L26blocks = {
         Location:new(world, 5048.0, 103.0, 1490.0),
         Location:new(world, 5048.0, 103.0, 1489.0),
         Location:new(world, 5048.0, 103.0, 1488.0),
@@ -1033,9 +1033,9 @@ local L24blocks = {
 };
 
 local world = "chambers";
-local L25current = 1;
-local L25maxData = 1;
-local L25blocks = {
+local L27current = 1;
+local L27maxData = 1;
+local L27blocks = {
         Location:new(world, 5050.0, 103.0, 1490.0),
         Location:new(world, 5050.0, 103.0, 1489.0),
         Location:new(world, 5050.0, 103.0, 1488.0),
@@ -1366,6 +1366,30 @@ end
 function c2_25_setlava()
         for index, key in ipairs(L25blocks) do
                 key:setBlock(10, L25current);
+end
+end
+
+function c2_26_setair()
+        for index, key in ipairs(L26blocks) do
+                key:setBlock(0, L26current);
+	end
+end
+
+function c2_26_setlava()
+        for index, key in ipairs(L26blocks) do
+                key:setBlock(10, L26current);
+end
+end
+
+function c2_27_setair()
+        for index, key in ipairs(L27blocks) do
+                key:setBlock(0, L27current);
+	end
+end
+
+function c2_27_setlava()
+        for index, key in ipairs(L27blocks) do
+                key:setBlock(10, L27current);
 end
 end
 
