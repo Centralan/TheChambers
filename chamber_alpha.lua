@@ -10,6 +10,10 @@ local c_spawn = Location:new(world, 5000.491, 96.0, 500.597);
 c_spawn:setYaw(-135.9);
 c_spawn:setPitch(3.6);
 
+local chamber_a = Location:new(world, 5000.0, 100.0, 1000.0);
+chamber_a:setYaw(-178.8);
+chamber_a:setPitch(12.9);
+
 ------------------
 --Chamber Alpha --
 ------------------
