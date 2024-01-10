@@ -1,5 +1,29 @@
 local world = World:new('chambers');
 
+----------------
+--Player Signs--
+----------------
+
+local sign = Location:new(world, 5028.0, 91.0, 509.0);
+local sign2 = Location:new(world, 4991.0, 91.0, 471.0);
+
+function chambers_sign(data)
+	local player = Player:new(data.player);
+        sign:setSign('Test Subject:', player.name, '', '');
+end
+
+function chambers_sign2(data)
+	local player = Player:new(data.player);
+        sign:setSign('Test Subject:', player.name, '', '');
+end
+
+registerHook("REGION_ENTER", "chambers_sign", "chambers-chamber_check");
+registerHook("REGION_ENTER", "chambers_sign2", "chambers-chamber_check2");
+
+----------------
+--Chamber Signs--
+----------------
+
 local a = Location:new(world, 5029.0, 94.0, 510.0);
 local b = Location:new(world, 5028.0, 94.0, 510.0);
 local c = Location:new(world, 5027.0, 94.0, 510.0);
