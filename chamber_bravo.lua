@@ -1,3 +1,4 @@
+---------------------------------
 --Worlds / Teleport / Messaging--
 ---------------------------------
 
@@ -8,11 +9,6 @@ local bot = AI:new("ATLAS", "AI", "Chambers");
 local c_spawn = Location:new(world, 5000.491, 96.0, 500.597);
 c_spawn:setYaw(-135.9);
 c_spawn:setPitch(3.6);
-
-function c_fall(data)
-  local player = Player:new(data.player);
-    player:teleport(c_spawn);
-end
 
 ------------------
 --Chamber Bravo --
