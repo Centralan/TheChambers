@@ -106,6 +106,14 @@ local chamber_c = Location:new(world, 5000.657, 100.0, 1500.570);
 chamber_c:setYaw(-89.4);
 chamber_c:setPitch(4.8);
 
+local chamber_d = Location:new(world, 5056.551, 100.0, 1091.517);
+chamber_d:setYaw(-89.4);
+chamber_d:setPitch(4.8);
+
+local chamber_e = Location:new(world, 4956.505, 100.0, 1086.511);
+chamber_e:setYaw(89.2);
+chamber_e:setPitch(10.7);
+
 function chamber_a_tp(data)
   local player = Player:new(data.player);
     player:teleport(chamber_a);
@@ -131,28 +139,26 @@ function chamber_c_tp(data)
     player:clearInventory();
 end
 
+function chamber_d_tp(data)
+  local player = Player:new(data.player);
+    player:teleport(chamber_c);
+    player:sendTitle("Welcome To", "&4Chamber Delta");
+    player:playSound('ENTITY_EVOCATION_ILLAGER_PREPARE_SUMMON', 1, 0.5);
+    player:clearInventory();
+end
+
+function chamber_e_tp(data)
+  local player = Player:new(data.player);
+    player:teleport(chamber_c);
+    player:sendTitle("Welcome To", "&5Chamber Echo");
+    player:playSound('ENTITY_EVOCATION_ILLAGER_PREPARE_SUMMON', 1, 0.5);
+    player:clearInventory();
+end
+
 
 registerHook("REGION_ENTER", "chamber_a_tp", "chambers-chamber_a")
 registerHook("REGION_ENTER", "chamber_b_tp", "chambers-chamber_b")
 registerHook("REGION_ENTER", "chamber_c_tp", "chambers-chamber_c")
-
-----------------
---Chamber Check--
-----------------
-
-local sign = Location:new(world, 5028.0, 91.0, 509.0);
-local sign2 = Location:new(world, 4991.0, 91.0, 471.0);
-
-function chambers_sign(data)
-	local player = Player:new(data.player);
-        sign:setSign('Test Subject:', player.name, '', '');
-end
-
-function chambers_sign2(data)
-	local player = Player:new(data.player);
-        sign:setSign('Test Subject:', player.name, '', '');
-end
-
-registerHook("REGION_ENTER", "chambers_sign", "chambers-chamber_check");
-registerHook("REGION_ENTER", "chambers_sign2", "chambers-chamber_check2");
+registerHook("REGION_ENTER", "chamber_d_tp", "chambers-chamber_d")
+registerHook("REGION_ENTER", "chamber_e_tp", "chambers-chamber_e")
 
