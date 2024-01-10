@@ -2137,6 +2137,333 @@ function c2_27_setlava()
 end
 end
 
+
+function c2_28_setair()
+        for index, key in ipairs(L28blocks) do
+                key:setBlock(0, L28current);
+	end
+end
+
+function c2_28_setlava()
+        for index, key in ipairs(L28blocks) do
+                key:setBlock(10, L28current);
+end
+end
+
+
+function c2_29_setair()
+        for index, key in ipairs(L29blocks) do
+                key:setBlock(0, L29current);
+	end
+end
+
+function c2_29_setlava()
+        for index, key in ipairs(L29blocks) do
+                key:setBlock(10, L29current);
+end
+end
+
+
+function c2_30_setair()
+        for index, key in ipairs(L30blocks) do
+                key:setBlock(0, L30current);
+	end
+end
+
+function c2_30_setlava()
+        for index, key in ipairs(L30blocks) do
+                key:setBlock(10, L30current);
+end
+end
+
+function c2_31_setair()
+        for index, key in ipairs(L31blocks) do
+                key:setBlock(0, L31current);
+	end
+end
+
+function c2_31_setlava()
+        for index, key in ipairs(L31blocks) do
+                key:setBlock(10, L31current);
+end
+end
+
+function c2_32_setair()
+        for index, key in ipairs(L32blocks) do
+                key:setBlock(0, L32current);
+	end
+end
+
+function c2_32_setlava()
+        for index, key in ipairs(L32blocks) do
+                key:setBlock(10, L32current);
+end
+end
+
+function c2_33_setair()
+        for index, key in ipairs(L33blocks) do
+                key:setBlock(0, L33current);
+	end
+end
+
+function c2_33_setlava()
+        for index, key in ipairs(L33blocks) do
+                key:setBlock(10, L33current);
+end
+end
+
+function c2_34_setair()
+        for index, key in ipairs(L34blocks) do
+                key:setBlock(0, L34current);
+	end
+end
+
+function c2_34_setlava()
+        for index, key in ipairs(L34blocks) do
+                key:setBlock(10, L34current);
+end
+end
+
+function c2_35_setair()
+        for index, key in ipairs(L35blocks) do
+                key:setBlock(0, L35current);
+	end
+end
+
+function c2_35_setlava()
+        for index, key in ipairs(L35blocks) do
+                key:setBlock(10, L35current);
+end
+end
+
+function c2_36_setair()
+        for index, key in ipairs(L36blocks) do
+                key:setBlock(0, L36current);
+	end
+end
+
+function c2_36_setlava()
+        for index, key in ipairs(L36blocks) do
+                key:setBlock(10, L36current);
+end
+end
+
+function c2_37_setair()
+        for index, key in ipairs(L37blocks) do
+                key:setBlock(0, L37current);
+	end
+end
+
+function c2_37_setlava()
+        for index, key in ipairs(L37blocks) do
+                key:setBlock(10, L37current);
+end
+end
+
+function c2_38_setair()
+        for index, key in ipairs(L38blocks) do
+                key:setBlock(0, L38current);
+	end
+end
+
+function c2_38_setlava()
+        for index, key in ipairs(L38blocks) do
+                key:setBlock(10, L38current);
+end
+end
+
+function c2_39_setair()
+        for index, key in ipairs(L39blocks) do
+                key:setBlock(0, L39current);
+	end
+end
+
+function c2_39_setlava()
+        for index, key in ipairs(L39blocks) do
+                key:setBlock(10, L39current);
+end
+end
+
+function c2_40_setair()
+        for index, key in ipairs(L40blocks) do
+                key:setBlock(0, L40current);
+	end
+end
+
+function c2_40_setlava()
+        for index, key in ipairs(L40blocks) do
+                key:setBlock(10, L40current);
+end
+end
+
+function c2_41_setair()
+        for index, key in ipairs(L41blocks) do
+                key:setBlock(0, L41current);
+	end
+end
+
+function c2_41_setlava()
+        for index, key in ipairs(L41blocks) do
+                key:setBlock(10, L41current);
+end
+end
+
+function c2_42_setair()
+        for index, key in ipairs(L42blocks) do
+                key:setBlock(0, L42current);
+	end
+end
+
+function c2_42_setlava()
+        for index, key in ipairs(L42blocks) do
+                key:setBlock(10, L42current);
+end
+end
+
+function c2_43_setair()
+        for index, key in ipairs(L43blocks) do
+                key:setBlock(0, L43current);
+	end
+end
+
+function c2_43_setlava()
+        for index, key in ipairs(L43blocks) do
+                key:setBlock(10, L43current);
+end
+end
+
+function c2_44_setair()
+        for index, key in ipairs(L44blocks) do
+                key:setBlock(0, L44current);
+	end
+end
+
+function c2_44_setlava()
+        for index, key in ipairs(L44blocks) do
+                key:setBlock(10, L44current);
+end
+end
+
+function c2_45_setair()
+        for index, key in ipairs(L45blocks) do
+                key:setBlock(0, L45current);
+	end
+end
+
+function c2_45_setlava()
+        for index, key in ipairs(L45blocks) do
+                key:setBlock(10, L45current);
+end
+end
+
+function c2_46_setair()
+        for index, key in ipairs(L46blocks) do
+                key:setBlock(0, L46current);
+	end
+end
+
+function c2_46_setlava()
+        for index, key in ipairs(L46blocks) do
+                key:setBlock(10, L46current);
+end
+end
+
+function c2_47_setair()
+        for index, key in ipairs(L47blocks) do
+                key:setBlock(0, L47current);
+	end
+end
+
+function c2_47_setlava()
+        for index, key in ipairs(L47blocks) do
+                key:setBlock(10, L47current);
+end
+end
+
+function c2_48_setair()
+        for index, key in ipairs(L48blocks) do
+                key:setBlock(0, L48current);
+	end
+end
+
+function c2_48_setlava()
+        for index, key in ipairs(L48blocks) do
+                key:setBlock(10, L48current);
+end
+end
+
+function c2_49_setair()
+        for index, key in ipairs(L49blocks) do
+                key:setBlock(0, L49current);
+	end
+end
+
+function c2_49_setlava()
+        for index, key in ipairs(L49blocks) do
+                key:setBlock(10, L49current);
+end
+end
+
+function c2_50_setair()
+        for index, key in ipairs(L50blocks) do
+                key:setBlock(0, L50current);
+	end
+end
+
+function c2_50_setlava()
+        for index, key in ipairs(L50blocks) do
+                key:setBlock(10, L50current);
+end
+end
+
+function c2_51_setair()
+        for index, key in ipairs(L51blocks) do
+                key:setBlock(0, L51current);
+	end
+end
+
+function c2_51_setlava()
+        for index, key in ipairs(L51blocks) do
+                key:setBlock(10, L51current);
+end
+end
+
+function c2_52_setair()
+        for index, key in ipairs(L52blocks) do
+                key:setBlock(0, L52current);
+	end
+end
+
+function c2_52_setlava()
+        for index, key in ipairs(L52blocks) do
+                key:setBlock(10, L52current);
+end
+end
+
+function c2_53_setair()
+        for index, key in ipairs(L53blocks) do
+                key:setBlock(0, L53current);
+	end
+end
+
+function c2_53_setlava()
+        for index, key in ipairs(L53blocks) do
+                key:setBlock(10, L53current);
+end
+end
+
+function c2_54_setair()
+        for index, key in ipairs(L54blocks) do
+                key:setBlock(0, L54current);
+	end
+end
+
+function c2_54_setlava()
+        for index, key in ipairs(L54blocks) do
+                key:setBlock(10, L54current);
+end
+end
+
 registerHook("BLOCK_GAINS_CURRENT", "c2_1_setlava", "chambers", 5031.0, 113.0, 1522.0);
 registerHook("BLOCK_GAINS_CURRENT", "c2_1_setair", "chambers", 5031.0, 109.0, 1523.0);
 
