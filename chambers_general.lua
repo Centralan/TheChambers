@@ -1,16 +1,16 @@
 -------------------------------
---Worlds / sounds / Messaging--
+--Worlds / Sounds / Messaging--
 -------------------------------
 
 local world = World:new('chambers');
 local world2 = World:new('survival3');
-local bot = AI:new("ATLAS", "AI", "Chambers");
+local bot = AI:new("ATLAS", "AI", "Chambers");;
 
 ---------
 --Enter--
 ---------
 
-local spawn_enter = Location:new(world, 5000.491, 183.0, 500.597);
+local spawn_enter = Location:new(world, 5000.491, 184.0, 500.597);
 spawn_enter:setYaw(128.0);
 spawn_enter:setPitch(25.8);
 
@@ -21,7 +21,7 @@ tease1:setPitch(9.8);
 function spawn_portal_chamber(data)
   local player = Player:new(data.player);
         player:teleport(spawn_enter);
-	player:addPermission("runsafe.warp.use.chambers");
+        player:addPermission("runsafe.warp.use.chambers");
 end
 
 function welcome_1(data)
@@ -29,6 +29,7 @@ function welcome_1(data)
         EventEngine.player.addPotionEffect(player.name, 'BLINDNESS', 100, 4);
 	player:sendTitle("&a&lWelcome To", "&2&lThe Chambers");
         player:playSound('ENTITY_SHULKER_AMBIENT', 1, 0.5);
+        player:addPermission("runsafe.warp.use.chambers");
 end
 
 function welcome_3(data)
@@ -38,15 +39,15 @@ end
 
 function lobby_map(data)
         local player = Player:new(data["player"]);
-	player:sendTitle("", "&eSomething reachs out from the &5void");
+	player:sendTitle("", "&eSomething reachs out from the &5&lvoid");
 	EventEngine.player.addPotionEffect(player.name, 'BLINDNESS', 100, 2);
 	player:playSound('ENTITY_EVOCATION_FANGS_ATTACK', 1, 0.5);
-	player:setHealth(14);
+        player:setHealth(14);
 end
 
 function lobby_tease(data)
         local player = Player:new(data["player"]);
-	player:sendTitle("", "Soon");
+	player:sendTitle("", "&e&lSoon");
 	player:playSound('ENTITY_PARROT_IMITATE_VEX', 1, 0.5);
 end
 
@@ -70,12 +71,11 @@ registerHook("REGION_LEAVE", "e_blind_remove", "survival3-spawn_event_room")
 registerHook("REGION_ENTER", "welcome_1", "chambers-welcome1");
 registerHook("REGION_ENTER", "welcome_3", "chambers-welcome3")
 
-
 ---------
 --Catch--
 ---------
 
-local c_spawn = Location:new(world, 5000.491, 96.0, 500.597);
+local c_spawn = Location:new(world, 5000.491, 97.0, 500.597);
 c_spawn:setYaw(-135.9);
 c_spawn:setPitch(3.6);
 
