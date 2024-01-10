@@ -2464,89 +2464,158 @@ function c2_54_setlava()
 end
 end
 
-registerHook("BLOCK_GAINS_CURRENT", "c2_1_setlava", "chambers", 5031.0, 113.0, 1522.0);
-registerHook("BLOCK_GAINS_CURRENT", "c2_1_setair", "chambers", 5031.0, 109.0, 1523.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_1_setair", "chambers", 5031.0, 117.0, 1522.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_1_setlava", "chambers", 5031.0, 112.0, 1523.0);
 
-registerHook("BLOCK_GAINS_CURRENT", "c2_2_setlava", "chambers", 5031.0, 113.0, 1520.0);
-registerHook("BLOCK_GAINS_CURRENT", "c2_2_setair", "chambers", 5031.0, 109.0, 1521.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_2_setair", "chambers", 5031.0, 117.0, 1520.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_2_setlava", "chambers", 5031.0, 112.0, 1521.0);
 
-registerHook("BLOCK_GAINS_CURRENT", "c2_3_setlava", "chambers", 5031.0, 113.0, 1518.0);
-registerHook("BLOCK_GAINS_CURRENT", "c2_3_setair", "chambers", 5031.0, 109.0, 1519.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_3_setair", "chambers", 5031.0, 117.0, 1520.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_3_setlava", "chambers", 5031.0, 112.0, 1519.0);
 
-registerHook("BLOCK_GAINS_CURRENT", "c2_4_setlava", "chambers", 5031.0, 113.0, 1516.0);
-registerHook("BLOCK_GAINS_CURRENT", "c2_4_setair", "chambers", 5031.0, 109.0, 1517.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_4_setair", "chambers", 5031.0, 117.0, 1518.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_4_setlava", "chambers", 5031.0, 112.0, 1517.0);
 
-registerHook("BLOCK_GAINS_CURRENT", "c2_5_setlava", "chambers", 5031.0, 113.0, 1514.0);
-registerHook("BLOCK_GAINS_CURRENT", "c2_5_setair", "chambers", 5031.0, 109.0, 1515.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_5_setair", "chambers", 5031.0, 117.0, 1516.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_5_setlava", "chambers", 5031.0, 112.0, 1515.0);
 
-registerHook("BLOCK_GAINS_CURRENT", "c2_6_setlava", "chambers", 5031.0, 113.0, 1512.0);
-registerHook("BLOCK_GAINS_CURRENT", "c2_6_setair", "chambers", 5031.0, 109.0, 1513.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_6_setair", "chambers", 5031.0, 117.0, 1514.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_6_setlava", "chambers", 5031.0, 112.0, 1513.0);
 
-registerHook("BLOCK_GAINS_CURRENT", "c2_7_setlava", "chambers", 5031.0, 113.0, 1510.0);
-registerHook("BLOCK_GAINS_CURRENT", "c2_7_setair", "chambers", 5031.0, 109.0, 1511.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_7_setair", "chambers", 5031.0, 117.0, 1512.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_7_setlava", "chambers", 5031.0, 112.0, 1511.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_8_setair", "chambers", 5031.0, 117.0, 1510.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_8_setlava", "chambers", 5031.0, 112.0, 1509.0);
 
 
-registerHook("BLOCK_GAINS_CURRENT", "c2_8_setlava", "chambers", 5031.0, 113.0, 1508.0);
-registerHook("BLOCK_GAINS_CURRENT", "c2_8_setair", "chambers", 5031.0, 109.0, 1509.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_9_setair", "chambers", 5031.0, 117.0, 1508.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_9_setlava", "chambers", 5031.0, 112.0, 1507.0);
 
-registerHook("BLOCK_GAINS_CURRENT", "c2_9_setlava", "chambers", 5031.0, 113.0, 1506.0);
-registerHook("BLOCK_GAINS_CURRENT", "c2_9_setair", "chambers", 5031.0, 109.0, 1507.0);
 
-registerHook("BLOCK_GAINS_CURRENT", "c2_10_setlava", "chambers", 5031.0, 113.0, 1504.0);
-registerHook("BLOCK_GAINS_CURRENT", "c2_10_setair", "chambers", 5031.0, 109.0, 1505.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_10_setair", "chambers", 5031.0, 117.0, 1506.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_10_setlava", "chambers", 5031.0, 112.0, 1505.0);
 
-registerHook("BLOCK_GAINS_CURRENT", "c2_11_setlava", "chambers", 5031.0, 113.0, 1502.0);
-registerHook("BLOCK_GAINS_CURRENT", "c2_11_setair", "chambers", 5031.0, 109.0, 1503.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_11_setair", "chambers", 5031.0, 117.0, 1504.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_11_setlava", "chambers", 5031.0, 112.0, 1503.0);
 
-registerHook("BLOCK_GAINS_CURRENT", "c2_12_setlava", "chambers", 5031.0, 113.0, 1500.0);
-registerHook("BLOCK_GAINS_CURRENT", "c2_12_setair", "chambers", 5031.0, 109.0, 1501.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_12_setair", "chambers", 5031.0, 117.0, 1502.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_12_setlava", "chambers", 5031.0, 112.0, 1501.0);
 
-registerHook("BLOCK_GAINS_CURRENT", "c2_13_setlava", "chambers", 5031.0, 113.0, 1498.0);
-registerHook("BLOCK_GAINS_CURRENT", "c2_13_setair", "chambers", 5031.0, 109.0, 1499.0);
 
-registerHook("BLOCK_GAINS_CURRENT", "c2_14_setlava", "chambers", 5031.0, 113.0, 1496.0);
-registerHook("BLOCK_GAINS_CURRENT", "c2_14_setair", "chambers", 5031.0, 109.0, 1497.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_13_setair", "chambers", 5031.0, 117.0, 1500.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_13_setlava", "chambers", 5031.0, 112.0, 1499.0);
 
-registerHook("BLOCK_GAINS_CURRENT", "c2_15_setlava", "chambers", 5031.0, 113.0, 1494.0);
-registerHook("BLOCK_GAINS_CURRENT", "c2_15_setair", "chambers", 5031.0, 109.0, 1495.0);
 
-registerHook("BLOCK_GAINS_CURRENT", "c2_16_setlava", "chambers", 5031.0, 113.0, 1492.0);
-registerHook("BLOCK_GAINS_CURRENT", "c2_16_setair", "chambers", 5031.0, 109.0, 1493.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_14_setair", "chambers", 5031.0, 117.0, 1498.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_14_setlava", "chambers", 5031.0, 112.0, 1497.0);
 
-registerHook("BLOCK_GAINS_CURRENT", "c2_17_setlava", "chambers", 5031.0, 113.0, 1490.0);
-registerHook("BLOCK_GAINS_CURRENT", "c2_17_setair", "chambers", 5031.0, 109.0, 1491.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_15_setair", "chambers", 5031.0, 117.0, 1496.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_15_setlava", "chambers", 5031.0, 112.0, 1495.0);
 
-registerHook("BLOCK_GAINS_CURRENT", "c2_18_setlava", "chambers", 5031.0, 113.0, 1488.0);
-registerHook("BLOCK_GAINS_CURRENT", "c2_18_setair", "chambers", 5031.0, 109.0, 1489.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_16_setair", "chambers", 5031.0, 117.0, 1494.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_16_setlava", "chambers", 5031.0, 112.0, 1493.0);
 
-registerHook("BLOCK_GAINS_CURRENT", "c2_19_setlava", "chambers", 5031.0, 113.0, 1486.0);
-registerHook("BLOCK_GAINS_CURRENT", "c2_19_setair", "chambers", 5031.0, 109.0, 1487.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_17_setair", "chambers", 5031.0, 117.0, 1492.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_17_setlava", "chambers", 5031.0, 112.0, 1491.0);
 
-registerHook("BLOCK_GAINS_CURRENT", "c2_19_setlava", "chambers", 5037.0, 113.0, 1486.0);
-registerHook("BLOCK_GAINS_CURRENT", "c2_19_setair", "chambers", 5036.0, 109.0, 1486.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_18_setair", "chambers", 5031.0, 117.0, 1490.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_18_setlava", "chambers", 5031.0, 112.0, 1489.0);
 
-registerHook("BLOCK_GAINS_CURRENT", "c2_20_setlava", "chambers", 5039.0, 113.0, 1486.0);
-registerHook("BLOCK_GAINS_CURRENT", "c2_20_setair", "chambers", 5038.0, 109.0, 1486.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_19_setair", "chambers", 5031.0, 117.0, 1488.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_19_setlava", "chambers", 5031.0, 112.0, 1487.0);
 
-registerHook("BLOCK_GAINS_CURRENT", "c2_21_setlava", "chambers", 5041.0, 113.0, 1486.0);
-registerHook("BLOCK_GAINS_CURRENT", "c2_21_setair", "chambers", 5040.0, 109.0, 1486.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_20_setair", "chambers", 5035.0, 117.0, 1486.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_20_setlava", "chambers", 5036.0, 112.0, 1486.0);
 
-registerHook("BLOCK_GAINS_CURRENT", "c2_22_setlava", "chambers", 5043.0, 113.0, 1486.0);
-registerHook("BLOCK_GAINS_CURRENT", "c2_22_setair", "chambers", 5042.0, 109.0, 1486.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_21_setair", "chambers", 5037.0, 117.0, 1486.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_21_setlava", "chambers", 5038.0, 112.0, 1486.0);
 
-registerHook("BLOCK_GAINS_CURRENT", "c2_23_setlava", "chambers", 5045.0, 113.0, 1486.0);
-registerHook("BLOCK_GAINS_CURRENT", "c2_23_setair", "chambers", 5044.0, 109.0, 1486.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_22_setair", "chambers", 5039.0, 117.0, 1486.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_22_setlava", "chambers", 5040.0, 112.0, 1486.0);
 
-registerHook("BLOCK_GAINS_CURRENT", "c2_24_setlava", "chambers", 5047.0, 113.0, 1486.0);
-registerHook("BLOCK_GAINS_CURRENT", "c2_24_setair", "chambers", 5046.0, 109.0, 1486.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_23_setair", "chambers", 5041.0, 117.0, 1486.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_23_setlava", "chambers", 5042.0, 112.0, 1486.0);
 
-registerHook("BLOCK_GAINS_CURRENT", "c2_25_setlava", "chambers", 5049.0, 113.0, 1486.0);
-registerHook("BLOCK_GAINS_CURRENT", "c2_25_setair", "chambers", 5048.0, 109.0, 1486.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_24_setair", "chambers", 5043.0, 117.0, 1486.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_24_setlava", "chambers", 5044.0, 112.0, 1486.0);
 
-registerHook("BLOCK_GAINS_CURRENT", "c2_26_setlava", "chambers", 5051.0, 113.0, 1486.0);
-registerHook("BLOCK_GAINS_CURRENT", "c2_26_setair", "chambers", 5050.0, 109.0, 1486.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_25_setair", "chambers", 5045.0, 117.0, 1486.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_25_setlava", "chambers", 5046.0, 112.0, 1486.0);
 
-registerHook("BLOCK_GAINS_CURRENT", "c2_27_setlava", "chambers", 5053.0, 113.0, 1486.0);
-registerHook("BLOCK_GAINS_CURRENT", "c2_27_setair", "chambers", 5052.0, 109.0, 1486.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_26_setair", "chambers", 5047.0, 117.0, 1486.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_26_setlava", "chambers", 5048.0, 112.0, 1486.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_27_setair", "chambers", 5049.0, 117.0, 1486.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_27_setlava", "chambers", 5050.0, 112.0, 1486.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_28_setair", "chambers", 5051.0, 117.0, 1490.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_28_setlava", "chambers", 5051.0, 112.0, 1491.0);
+
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_29_setair", "chambers", 5051.0, 117.0, 1492.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_29_setlava", "chambers", 5051.0, 112.0, 1493.0);
+
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_30_setair", "chambers", 5051.0, 117.0, 1494.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_30_setlava", "chambers", 5051.0, 112.0, 1495.0);
+
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_31_setair", "chambers", 5051.0, 117.0, 1496.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_31_setlava", "chambers", 5051.0, 112.0, 1497.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_32_setair", "chambers", 5051.0, 117.0, 1498.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_32_setlava", "chambers", 5051.0, 112.0, 1499.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_33_setair", "chambers", 5051.0, 117.0, 1500.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_33_setlava", "chambers", 5051.0, 112.0, 1499.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_34_setair", "chambers", 5051.0, 117.0, 1502.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_34_setlava", "chambers", 5051.0, 112.0, 1501.0);
+
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_35_setair", "chambers", 5051.0, 117.0, 1504.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_35_setlava", "chambers", 5051.0, 112.0, 1503.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_36_setair", "chambers", 5051.0, 117.0, 1506.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_36_setlava", "chambers", 5051.0, 112.0, 1505.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_37_setair", "chambers", 5051.0, 117.0, 1508.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_37_setlava", "chambers", 5051.0, 112.0, 1507.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_38_setair", "chambers", 5051.0, 117.0, 1510.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_38_setlava", "chambers", 5051.0, 112.0, 1509.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_39_setair", "chambers", 5051.0, 117.0, 1512.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_39_setlava", "chambers", 5051.0, 112.0, 1511.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_40_setair", "chambers", 5051.0, 117.0, 1514.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_40_setlava", "chambers", 5051.0, 112.0, 1513.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_41_setair", "chambers", 5051.0, 117.0, 1516.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_41_setlava", "chambers", 5051.0, 112.0, 1515.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_42_setair", "chambers", 5051.0, 117.0, 1518.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_42_setlava", "chambers", 5051.0, 112.0, 1517.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_43_setair", "chambers", 5051.0, 117.0, 1520.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_43_setlava", "chambers", 5051.0, 112.0, 1519.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_44_setair", "chambers", 5051.0, 117.0, 1522.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_44_setlava", "chambers", 5051.0, 112.0, 1521.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_45_setair", "chambers", 5051.0, 117.0, 1524.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_45_setlava", "chambers", 5051.0, 112.0, 1523.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_46_setair", "chambers", 5051.0, 117.0, 1526.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_46_setlava", "chambers", 5051.0, 112.0, 1525.0);
+
+registerHook("BLOCK_GAINS_CURRENT", "c2_47_setair", "chambers", 5051.0, 117.0, 1528.0);
+registerHook("BLOCK_GAINS_CURRENT", "c2_47_setlava", "chambers", 5051.0, 112.0, 1527.0);
+
+
+
+
+
 
 
