@@ -203,8 +203,8 @@ function e1__1_start(data)
 end
 
 function e1__1_reset()
-        for index, key in ipairs(bars1blocks) do
-                key:setBlock(251, bars1current);
+        for index, key in ipairs(f1blocks) do
+                key:setBlock(251, f1current);
 end
 end
 
