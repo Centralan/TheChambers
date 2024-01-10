@@ -2613,9 +2613,16 @@ registerHook("BLOCK_GAINS_CURRENT", "c2_46_setlava", "chambers", 5051.0, 112.0, 
 registerHook("BLOCK_GAINS_CURRENT", "c2_47_setair", "chambers", 5051.0, 117.0, 1528.0);
 registerHook("BLOCK_GAINS_CURRENT", "c2_47_setlava", "chambers", 5051.0, 112.0, 1527.0);
 
+function chamer_c_complete(data)
+        local player = Player:new(data.player);
+                player:setHealth(20);
+                player:teleport(c_spawn);
+	        bot:speak( player.name .. " has completed &6Chamber Charlie&f.");
+                player:playSound('UI_TOAST_CHALLENGE_COMPLETE', 1, 1);
+	        player:addPermission("runsafe.chambers.charlie"); 
+end
 
-
-
+registerHook("REGION_ENTER", "chamer_c_complete", "chambers-c_complete");
 
 
 
