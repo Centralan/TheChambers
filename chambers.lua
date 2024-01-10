@@ -141,7 +141,7 @@ end
 
 function chamber_d_tp(data)
   local player = Player:new(data.player);
-    player:teleport(chamber_c);
+    player:teleport(chamber_d);
     player:sendTitle("Welcome To", "&4Chamber Delta");
     player:playSound('ENTITY_EVOCATION_ILLAGER_PREPARE_SUMMON', 1, 0.5);
     player:clearInventory();
@@ -149,7 +149,7 @@ end
 
 function chamber_e_tp(data)
   local player = Player:new(data.player);
-    player:teleport(chamber_c);
+    player:teleport(chamber_e);
     player:sendTitle("Welcome To", "&5Chamber Echo");
     player:playSound('ENTITY_EVOCATION_ILLAGER_PREPARE_SUMMON', 1, 0.5);
     player:clearInventory();
