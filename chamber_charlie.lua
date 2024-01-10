@@ -2619,7 +2619,7 @@ function chamer_c_complete(data)
                 player:teleport(c_spawn);
 	        bot:speak( player.name .. " has completed &6Chamber Charlie&f.");
                 player:playSound('UI_TOAST_CHALLENGE_COMPLETE', 1, 1);
-	        player:addPermission("runsafe.chambers.charlie"); 
+	        player:addPermission("runsafe.chambers.charile"); 
 end
 
 registerHook("REGION_ENTER", "chamer_c_complete", "chambers-c_complete");
