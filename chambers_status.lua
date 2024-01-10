@@ -14,7 +14,7 @@ end
 
 function chambers_sign2(data)
 	local player = Player:new(data.player);
-        sign:setSign('Test Subject:', player.name, '', '');
+        sign2:setSign('Test Subject:', player.name, '', '');
 end
 
 registerHook("REGION_ENTER", "chambers_sign", "chambers-chamber_check");
