@@ -131,6 +131,7 @@ function chamber_c_tp(data)
     player:clearInventory();
 end
 
+
 registerHook("REGION_ENTER", "chamber_a_tp", "chambers-chamber_a")
 registerHook("REGION_ENTER", "chamber_b_tp", "chambers-chamber_b")
 registerHook("REGION_ENTER", "chamber_c_tp", "chambers-chamber_c")
