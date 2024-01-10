@@ -111,6 +111,7 @@ function chamber_a_tp(data)
     player:teleport(chamber_a);
     player:sendTitle("Welcome To", "&bChamber Alpha");
     player:playSound('ENTITY_EVOCATION_ILLAGER_PREPARE_SUMMON', 1, 0.5);
+    player:clearInventory();
 end
 
 function chamber_b_tp(data)
@@ -119,6 +120,7 @@ function chamber_b_tp(data)
     player:sendTitle("Welcome To", "&aChamber Bravo");
     b1chest:cloneChestToPlayer(player.name);
     player:playSound('ENTITY_EVOCATION_ILLAGER_PREPARE_SUMMON', 1, 0.5);
+    player:clearInventory();
 end
 
 function chamber_c_tp(data)
@@ -126,6 +128,7 @@ function chamber_c_tp(data)
     player:teleport(chamber_c);
     player:sendTitle("Welcome To", "&eChamber Charlie");
     player:playSound('ENTITY_EVOCATION_ILLAGER_PREPARE_SUMMON', 1, 0.5);
+    player:clearInventory();
 end
 
 registerHook("REGION_ENTER", "chamber_a_tp", "chambers-chamber_a")
