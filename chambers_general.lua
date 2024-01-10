@@ -4,7 +4,7 @@
 
 local world = World:new('chambers');
 local world2 = World:new('survival3');
-local bot = AI:new("ATLAS", "AI", "Chambers");;
+local bot = AI:new("ATLAS", "AI", "Chambers");
 
 ---------
 --Enter--
