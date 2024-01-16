@@ -17,14 +17,14 @@ local bottle1 = Location:new(world, 5037, 108, 1083);
 
 function d1_waterbucket(data)
 	local player = Player:new(data.player);
-        player:closeInventory();
         waterbucket1:cloneChestToPlayer(player.name);
+	player:closeInventory();
 end
 
 function d1_bottle(data)
 	local player = Player:new(data.player);
-        player:closeInventory();
         bottle1:cloneChestToPlayer(player.name);
+	player:closeInventory();
 end
 
 registerHook("INTERACT", "d1_waterbucket", 54, "chambers", 5038.0, 98.0, 1101.0);
