@@ -14,6 +14,10 @@ c_spawn:setPitch(3.6);
 
 local waterbucket1 = Location:new(world, 5037, 108, 1080);
 local bottle1 = Location:new(world, 5037, 108, 1083);
+local dooropen1 = Location:new(world, 5048, 101, 1089);
+local doorclose1 = Location:new(world, 5066, 100, 1075);
+local dooropen2 = Location:new(world, 5054, 102, 1100);
+local doorclose2 = Location:new(world, 5064, 105, 1109);
 
 function d1_waterbucket(data)
 	local player = Player:new(data.player);
@@ -71,12 +75,14 @@ end
 function d1_1_setair()
         for index, key in ipairs(d1blocks) do
                 key:setBlock(0, d1current);
+		dooropen1:playSound('BLOCK_FENCE_GATE_OPEN', 0.3, 0.5);
 end
 end
 
 function d1_1_setstone()
         for index, key in ipairs(d1blocks) do
                 key:setBlock(98, d1current);
+		doorclose1:playSound('BLOCK_FENCE_GATE_CLOSE', 0.3, 0.5);
 end
 end
 
@@ -96,12 +102,14 @@ end
 function d1_3_setair()
         for index, key in ipairs(d3blocks) do
                 key:setBlock(0, d3current);
+		dooropen2:playSound('BLOCK_FENCE_GATE_OPEN', 0.3, 0.5);
 end
 end
 
 function d1_3_setstone()
         for index, key in ipairs(d3blocks) do
                 key:setBlock(98, d3current);
+		doorclose2:playSound('BLOCK_FENCE_GATE_CLOSE', 0.3, 0.5);
 end
 end
 
