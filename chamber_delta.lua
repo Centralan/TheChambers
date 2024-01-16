@@ -175,6 +175,14 @@ local H1blocks = {
         Location:new(world, 5092.0, 90.0, 1107.0),
 };
 
+--auto anvil
+local world = "chambers";
+local DAcurrent = 1;
+local DAmaxData = 1;
+local DAblocks = {
+        Location:new(world, 5082.0, 105.0, 1118.0),
+};
+
 function d2_set(data)
         if d2current == d2maxData then
                 d2current = 1;
@@ -196,8 +204,14 @@ function d2_hopper()
 end
 end
 
+function d2_anvil()
+        for index, key in ipairs(DAblocks) do
+                key:setBlock(145, DAcurrent);
+end
+end
+
 
 registerHook("BLOCK_GAINS_CURRENT", "d2_setair", "chambers", 5094.0, 102.0, 1107.0);
 registerHook("BLOCK_GAINS_CURRENT", "d2_hopper", "chambers", 5098.0, 102.0, 1107.0);
-
+registerHook("REGION_ENTER", "d2_anvil", "chambers-d_anvil");
 
