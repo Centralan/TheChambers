@@ -125,7 +125,7 @@ registerHook("REGION_ENTER", "d1_1_setstone", "chambers-d1_setstone");
 
 registerHook("INTERACT", "d1_2_setair", 143, "chambers", 5063.0, 104.0, 1095.0);
 registerHook("REGION_ENTER", "d1_2_setstone", "chambers-d1_2_setstone");
-registerHook("REGION_ENTER", "d2_wipe", "chambers-d1_2_setstone");
+registerHook("REGION_ENTER", "d2_wipe", "chambers-d1_setstone");
 
 registerHook("BLOCK_GAINS_CURRENT", "d1_3_setair", "chambers", 5048.0, 101.0, 1098.0);
 registerHook("REGION_ENTER", "d1_3_setstone", "chambers-d9");
