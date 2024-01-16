@@ -96,7 +96,7 @@ function d1_2_setstone()
 end
 end
 
-registerHook("BLOCK_GAINS_CURRENT", "d1_1_setair", "chambers", 5050.0, 100.0, 1087.0);
+registerHook("BLOCK_GAINS_CURRENT", "d1_1_setair", "chambers", 5050.0, 97.0, 1086.0);
 registerHook("REGION_ENTER", "d1_1_setstone", "chambers-d1_setstone");
 registerHook("REGION_ENTER", "d1_1_setcal", "chambers-d1_setstone");
 
