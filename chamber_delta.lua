@@ -39,6 +39,7 @@ local d1blocks = {
         Location:new(world, 5063.0, 101.0, 1076.0),
 };
 
+--bottle drop down
 local world = "chambers";
 local d2current = 1;
 local d2maxData = 1;
@@ -47,6 +48,7 @@ local d2blocks = {
         Location:new(world, 5062.0, 103.0, 1095.0),
 };
 
+--cal repalce
 local world = "chambers";
 local d3current = 1;
 local d3maxData = 1;
@@ -77,8 +79,8 @@ end
 end
 
 function d1_1_setcal()
-        for index, key in ipairs(d2blocks) do
-                key:setBlock(98, d2current);
+        for index, key in ipairs(d3blocks) do
+                key:setBlock(380, d3current);
 end
 end
 
@@ -96,10 +98,7 @@ end
 
 registerHook("BLOCK_GAINS_CURRENT", "d1_1_setair", "chambers", 5050.0, 100.0, 1087.0);
 registerHook("REGION_ENTER", "d1_1_setstone", "chambers-d1_setstone");
-registerHook("REGION_ENTER", "d1_2_setcal", "chambers-d1_setstone");
+registerHook("REGION_ENTER", "d1_1_setcal", "chambers-d1_setstone");
 
 registerHook("INTERACT", "d1_2_setair", 143, "chambers", 5063.0, 104.0, 1095.0);
 registerHook("REGION_ENTER", "d1_2_setstone", "chambers-d1_2_setstone");
-
-
-
