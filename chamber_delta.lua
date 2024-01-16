@@ -10,6 +10,41 @@ local c_spawn = Location:new(world, 5000.491, 96.0, 500.597);
 c_spawn:setYaw(-135.9);
 c_spawn:setPitch(3.6);
 
+--decoy sounds
+
+local d1 = Location:new(world, 5050, 102, 1091);
+
+function d_piston(data)
+	local player = Player:new(data.player);
+        d1:playSound('BLOCK_PISTON_EXTEND', 1, 1.0);
+end
+
+function d_door_open(data)
+	local player = Player:new(data.player);
+        d1:playSound('BLOCK_IRON_DOOR_OPEN', 1, 1.0);
+end
+
+function d_door_close(data)
+	local player = Player:new(data.player);
+        d1:playSound('BLOCK_IRON_DOOR_CLOSE', 1, 1.0);
+end
+
+function d_dispenser(data)
+	local player = Player:new(data.player);
+        d1:playSound('BLOCK_DISPENSER_DISPENSE',1, 1.0);
+end
+
+function d_comparator(data)
+	local player = Player:new(data.player);
+        d1:playSound('BLOCK_COMPARATOR_CLICK', 1, 1.0);
+end
+
+registerHook("INTERACT", "d_door_open", 69, "chambers", 5055.0, 104.0, 1100.0);
+registerHook("INTERACT", "d_dispenser", 77, "chambers", 5037.0, 102.0, 1102.0);
+registerHook("INTERACT", "d_piston", 72, "chambers", 5040.0, 100.0, 1087.0);
+registerHook("INTERACT", "d_comparator", 146, "chambers", 5038.0, 100.0, 1072.0);
+
+
 --delta 1
 
 local waterbucket1 = Location:new(world, 5037, 108, 1080);
