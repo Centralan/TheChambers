@@ -28,7 +28,7 @@ function d1_bottle(data)
 end
 
 registerHook("INTERACT", "d1_waterbucket", 54, "chambers", 5038.0, 98.0, 1101.0);
-registerHook("INTERACT", "d1_bottle", 379, "chambers", 5070.0, 101.0, 1091.0);
+registerHook("REGION_ENTER", "d1_bottle", "chambers-d7");
 
 --water bucket door
 local world = "chambers";
