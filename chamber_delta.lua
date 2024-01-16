@@ -58,6 +58,14 @@ local d3blocks = {
         Location:new(world, 5060.0, 105.0, 1110.0),
 };
 
+--brewing
+local world = "chambers";
+local d4current = 0;
+local d4maxData = 0;
+local d4blocks = {
+        Location:new(world, 5052.0, 101.0, 1100.0),
+};
+
 function d1_set(data)
         if d1current == d1maxData then
                 d1current = 1;
@@ -104,6 +112,12 @@ function d1_3_setstone()
 end
 end
 
+function d1_4_setbrew()
+        for index, key in ipairs(d4blocks) do
+                key:setBlock(379, d4current);
+end
+end
+
 registerHook("BLOCK_GAINS_CURRENT", "d1_1_setair", "chambers", 5050.0, 97.0, 1086.0);
 registerHook("REGION_ENTER", "d1_1_setstone", "chambers-d1_setstone");
 
@@ -112,3 +126,4 @@ registerHook("REGION_ENTER", "d1_2_setstone", "chambers-d1_2_setstone");
 
 registerHook("BLOCK_GAINS_CURRENT", "d1_3_setair", "chambers", 5048.0, 101.0, 1098.0);
 registerHook("REGION_ENTER", "d1_3_setstone", "chambers-d9");
+registerHook("REGION_ENTER", "d1_4_setbrew", "chambers-d9");
