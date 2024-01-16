@@ -164,3 +164,40 @@ registerHook("REGION_ENTER", "d2_wipe", "chambers-d1_setstone");
 
 registerHook("BLOCK_GAINS_CURRENT", "d1_3_setair", "chambers", 5048.0, 101.0, 1098.0);
 registerHook("REGION_ENTER", "d1_3_setstone", "chambers-d9");
+
+--delta 2
+
+--hopper clean up
+local world = "chambers";
+local H1current = 1;
+local H1maxData = 1;
+local H1blocks = {
+        Location:new(world, 5092.0, 90.0, 1107.0),
+};
+
+function d2_set(data)
+        if d2current == d2maxData then
+                d2current = 1;
+        else
+                d2current = d2current + 1;
+        end
+        d2_sethopper();
+end
+
+function d2_setair()
+        for index, key in ipairs(H1blocks) do
+                key:setBlock(0, H1current);
+end
+end
+
+function d2_hopper()
+        for index, key in ipairs(H1blocks) do
+                key:setBlock(154, H1current);
+end
+end
+
+
+registerHook("BLOCK_GAINS_CURRENT", "d2_setair", "chambers", 5094.0, 102.0, 1107.0);
+registerHook("BLOCK_GAINS_CURRENT", "d2_hopper", "chambers", 5098.0, 102.0, 1107.0);
+
+
