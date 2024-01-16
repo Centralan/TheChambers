@@ -48,6 +48,16 @@ local d2blocks = {
         Location:new(world, 5062.0, 103.0, 1095.0),
 };
 
+
+--exit
+local world = "chambers";
+local d3current = 1;
+local d3maxData = 1;
+local d3blocks = {
+        Location:new(world, 5061.0, 105.0, 1110.0),
+        Location:new(world, 5060.0, 105.0, 1110.0),
+};
+
 function d1_set(data)
         if d1current == d1maxData then
                 d1current = 1;
@@ -82,8 +92,23 @@ function d1_2_setstone()
 end
 end
 
+function d1_3_setair()
+        for index, key in ipairs(d3blocks) do
+                key:setBlock(0, d3current);
+end
+end
+
+function d1_3_setstone()
+        for index, key in ipairs(d3blocks) do
+                key:setBlock(98, d3current);
+end
+end
+
 registerHook("BLOCK_GAINS_CURRENT", "d1_1_setair", "chambers", 5050.0, 97.0, 1086.0);
 registerHook("REGION_ENTER", "d1_1_setstone", "chambers-d1_setstone");
 
 registerHook("INTERACT", "d1_2_setair", 143, "chambers", 5063.0, 104.0, 1095.0);
 registerHook("REGION_ENTER", "d1_2_setstone", "chambers-d1_2_setstone");
+
+registerHook("BLOCK_GAINS_CURRENT", "d1_3_setair", "chambers", 5048.0, 101.0, 1098.0);
+registerHook("REGION_ENTER", "d1_3_setstone", "chambers-d9");
