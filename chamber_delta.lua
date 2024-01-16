@@ -215,3 +215,13 @@ registerHook("BLOCK_GAINS_CURRENT", "d2_setair", "chambers", 5094.0, 102.0, 1107
 registerHook("BLOCK_GAINS_CURRENT", "d2_hopper", "chambers", 5098.0, 102.0, 1107.0);
 registerHook("REGION_ENTER", "d2_anvil", "chambers-d_anvil");
 
+local d2xp = Location:new(world, 5082, 109, 1119);
+
+function d2_xpbottle(data)
+	local player = Player:new(data.player);
+        d2xp:cloneChestToPlayer(player.name);
+	player:closeInventory();
+end
+
+registerHook("INTERACT", "d2_xpbottle", 143, "chambers", 5082.0, 107.0, 1119.0);
+
