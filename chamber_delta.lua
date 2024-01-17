@@ -167,6 +167,9 @@ registerHook("REGION_ENTER", "d1_3_setstone", "chambers-d9");
 
 --delta 2
 
+local d2dooropen = Location:new(world, 5100, 107, 1113);
+local d2doorclose = Location:new(world, 5100, 89, 1114);
+
 --hopper clean up
 local world = "chambers";
 local H1current = 1;
@@ -181,6 +184,14 @@ local DAcurrent = 1;
 local DAmaxData = 1;
 local DAblocks = {
         Location:new(world, 5082.0, 105.0, 1118.0),
+};
+
+--exit
+local world = "chambers";
+local DEcurrent = 1;
+local DEmaxData = 1;
+local DEblocks = {
+        Location:new(world, 5100.0, 104.0, 1114.0),
 };
 
 function d2_set(data)
@@ -210,10 +221,26 @@ function d2_anvil()
 end
 end
 
+function d2_exit_air()
+        for index, key in ipairs(DEblocks) do
+                key:setBlock(0, DEcurrent);
+		d2dooropen:playSound('BLOCK_FENCE_GATE_OPEN', 0.3, 0.5);
+end
+end
+
+function d2_exit_stone()
+        for index, key in ipairs(DEblocks) do
+                key:setBlock(98, DEcurrent);
+		d2doorclose:playSound('BLOCK_FENCE_GATE_CLOSE', 0.3, 0.5);
+end
+end
+
 
 registerHook("BLOCK_GAINS_CURRENT", "d2_setair", "chambers", 5094.0, 102.0, 1107.0);
 registerHook("BLOCK_GAINS_CURRENT", "d2_hopper", "chambers", 5098.0, 102.0, 1107.0);
+registerHook("BLOCK_GAINS_CURRENT", "d2_exit_air", "chambers", 5092.0, 89.0, 1111.0);
 registerHook("REGION_ENTER", "d2_anvil", "chambers-d_anvil");
+registerHook("REGION_ENTER", "d2_exit_stone", "chambers-d2_setstone");
 
 local d2xp = Location:new(world, 5082, 109, 1119);
 
@@ -224,4 +251,6 @@ function d2_xpbottle(data)
 end
 
 registerHook("INTERACT", "d2_xpbottle", 143, "chambers", 5082.0, 107.0, 1119.0);
+
+--delta 3
 
