@@ -250,7 +250,13 @@ function d2_xpbottle(data)
 	player:closeInventory();
 end
 
+function d2_exitwipe(data)
+	local player = Player:new(data.player);
+        player:clearInventory();
+end
+
 registerHook("INTERACT", "d2_xpbottle", 143, "chambers", 5082.0, 107.0, 1119.0);
+registerHook("REGION_ENTER", "d2_exitwipe", "chambers-d2_setstone");
 
 --delta 3
 
