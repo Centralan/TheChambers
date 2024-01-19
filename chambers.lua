@@ -117,7 +117,7 @@ chamber_e:setPitch(10.7);
 function chamber_a_tp(data)
   local player = Player:new(data.player);
     player:teleport(chamber_a);
-    player:sendTitle("Welcome To", "&bChamber Alpha");
+    player:sendTitle("Welcome To The", "&bChamber Of Deception");
     player:playSound('ENTITY_EVOCATION_ILLAGER_PREPARE_SUMMON', 1, 0.5);
     player:clearInventory();
 end
@@ -125,7 +125,7 @@ end
 function chamber_b_tp(data)
   local player = Player:new(data.player);
     player:teleport(chamber_b);
-    player:sendTitle("Welcome To", "&aChamber Bravo");
+    player:sendTitle("Welcome To The", "&bChamber Of Mirrors");
     b1chest:cloneChestToPlayer(player.name);
     player:playSound('ENTITY_EVOCATION_ILLAGER_PREPARE_SUMMON', 1, 0.5);
     player:clearInventory();
@@ -134,7 +134,7 @@ end
 function chamber_c_tp(data)
   local player = Player:new(data.player);
     player:teleport(chamber_c);
-    player:sendTitle("Welcome To", "&eChamber Charlie");
+    player:sendTitle("Welcome To The", "&bChamber Of Stamina");
     player:playSound('ENTITY_EVOCATION_ILLAGER_PREPARE_SUMMON', 1, 0.5);
     player:clearInventory();
 end
@@ -142,7 +142,7 @@ end
 function chamber_d_tp(data)
   local player = Player:new(data.player);
     player:teleport(chamber_d);
-    player:sendTitle("Welcome To", "&4Chamber Delta");
+    player:sendTitle("Welcome To The", "&bChamber Of Knowledge");
     player:playSound('ENTITY_EVOCATION_ILLAGER_PREPARE_SUMMON', 1, 0.5);
     player:clearInventory();
 end
@@ -150,7 +150,7 @@ end
 function chamber_e_tp(data)
   local player = Player:new(data.player);
     player:teleport(chamber_e);
-    player:sendTitle("Welcome To", "&5Chamber Echo");
+    player:sendTitle("Welcome To The", "&bChamber Of tbd");
     player:playSound('ENTITY_EVOCATION_ILLAGER_PREPARE_SUMMON', 1, 0.5);
     player:clearInventory();
 end
