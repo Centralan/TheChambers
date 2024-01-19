@@ -303,6 +303,7 @@ function d3_1_reset2()
 end
 end
 
+
 function d3_1_exit1()
         for index, key in ipairs(D3E1blocks) do
                 key:setBlock(0, D3E1current);
