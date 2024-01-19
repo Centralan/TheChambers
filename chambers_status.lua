@@ -440,3 +440,224 @@ local g2 = Location:new(world, 5025.0, 91.0, 515.0);
 local h2 = Location:new(world, 5024.0, 91.0, 513.0);
 local i2 = Location:new(world, 5024.0, 91.0, 511.0);
 local r2 = Location:new(world, 5025.0, 91.0, 509.0);
+
+function chambers_sign2_a1(data)
+	local player = Player:new(data.player);
+	if player:hasPermission("runsafe.chambers.alpha") then
+	   for index, key in ipairs(p2ablocks) do
+           key:setBlock(133, p2acurrent);
+           a2:setSign('Status', 'Chamber Alpha:', '', 'Completed');
+		end
+	end
+end
+
+function chambers_sign2_a2(data)
+	local player = Player:new(data.player);
+	if not player:hasPermission("runsafe.chambers.alpha") then
+	   for index, key in ipairs(p2ablocks) do
+           key:setBlock(152, p2acurrent);
+           a2:setSign('Status', 'Chamber Alpha:', '', 'NO DATA');
+		end
+	end
+end
+
+function chambers_sign2_b1(data)
+	local player = Player:new(data.player);
+	if player:hasPermission("runsafe.chambers.bravo") then
+	   for index, key in ipairs(p2bblocks) do
+           key:setBlock(133, p2bcurrent);
+           b2:setSign('Status', 'Chamber Bravo:', '', 'Completed');
+		end
+	end
+end
+
+function chambers_sign2_b2(data)
+	local player = Player:new(data.player);
+	if not player:hasPermission("runsafe.chambers.bravo") then
+	   for index, key in ipairs(p2bblocks) do
+           key:setBlock(152, p2bcurrent);
+           b2:setSign('Status', 'Chamber Bravo:', '', 'NO DATA');
+		end
+	end
+end
+
+function chambers_sign2_c1(data)
+	local player = Player:new(data.player);
+	if player:hasPermission("runsafe.chambers.charile") then
+	   for index, key in ipairs(p2cblocks) do
+           key:setBlock(133, p2ccurrent);
+           c2:setSign('Status', 'Chamber Charlie:', '', 'Completed');
+		end
+	end
+end
+
+function chambers_sign2_c2(data)
+	local player = Player:new(data.player);
+	if not player:hasPermission("runsafe.chambers.charile") then
+	   for index, key in ipairs(p2cblocks) do
+           key:setBlock(152, p2ccurrent);
+           c2:setSign('Status', 'Chamber Charlie:', '', 'NO DATA');
+		end
+	end
+end
+
+function chambers_sign2_d1(data)
+	local player = Player:new(data.player);
+	if player:hasPermission("runsafe.chambers.delta") then
+	   for index, key in ipairs(p2dblocks) do
+           key:setBlock(133, p2dcurrent);
+           d2:setSign('Status', 'Chamber Delta:', '', 'Completed');
+		end
+	end
+end
+
+function chambers_sign2_d2(data)
+	local player = Player:new(data.player);
+	if not player:hasPermission("runsafe.chambers.delta") then
+	   for index, key in ipairs(p2dblocks) do
+           key:setBlock(152, p2dcurrent);
+           d2:setSign('Status', 'Chamber Delta:', '', 'NO DATA');
+		end
+	end
+end
+
+function chambers_sign2_e1(data)
+	local player = Player:new(data.player);
+	if player:hasPermission("runsafe.chambers.echo") then
+	   for index, key in ipairs(p2eblocks) do
+           key:setBlock(133, p2beurrent);
+           e2:setSign('Status', 'Chamber Echo:', '', 'Completed');
+		end
+	end
+end
+
+function chambers_sign2_e2(data)
+	local player = Player:new(data.player);
+	if not player:hasPermission("runsafe.chambers.echo") then
+	   for index, key in ipairs(p2eblocks) do
+           key:setBlock(152, p2ecurrent);
+           e2:setSign('Status', 'Chamber Echo:', '', 'NO DATA');
+		end
+	end
+end
+
+function chambers_sign2_f1(data)
+	local player = Player:new(data.player);
+	if player:hasPermission("runsafe.chambers.foxtrot") then
+	   for index, key in ipairs(p2fblocks) do
+           key:setBlock(133, p2fcurrent);
+           f2:setSign('Status', 'Chamber Foxtrot:', '', 'Completed');
+		end
+	end
+end
+
+function chambers_sign2_f2(data)
+	local player = Player:new(data.player);
+	if not player:hasPermission("runsafe.chambers.foxtrot") then
+	   for index, key in ipairs(p2fblocks) do
+           key:setBlock(152, p2fcurrent);
+           f2:setSign('Status', 'Chamber Foxtrot:', '', 'NO DATA');
+		end
+	end
+end
+
+function chambers_sign2_g1(data)
+	local player = Player:new(data.player);
+	if player:hasPermission("runsafe.chambers.golf") then
+	   for index, key in ipairs(p2gblocks) do
+           key:setBlock(133, p2gcurrent);
+           g2:setSign('Status', 'Chamber Golf:', '', 'Completed');
+		end
+	end
+end
+
+function chambers_sign2_g2(data)
+	local player = Player:new(data.player);
+	if not player:hasPermission("runsafe.chambers.golf") then
+	   for index, key in ipairs(p2gblocks) do
+           key:setBlock(152, p2gcurrent);
+           g2:setSign('Status', 'Chamber Golf:', '', 'NO DATA');
+		end
+	end
+end
+
+function chambers_sign2_h1(data)
+	local player = Player:new(data.player);
+	if player:hasPermission("runsafe.chambers.hotel") then
+	   for index, key in ipairs(p2hblocks) do
+           key:setBlock(133, p2hcurrent);
+           h2:setSign('Status', 'Chamber Hotel:', '', 'Completed');
+		end
+	end
+end
+
+function chambers_sign2_h2(data)
+	local player = Player:new(data.player);
+	if not player:hasPermission("runsafe.chambers.hotel") then
+	   for index, key in ipairs(p2hblocks) do
+           key:setBlock(152, p2hcurrent);
+           h2:setSign('Status', 'Chamber Hotel:', '', 'NO DATA');
+		end
+	end
+end
+
+function chambers_sign2_i1(data)
+	local player = Player:new(data.player);
+	if player:hasPermission("runsafe.chambers.india") then
+	   for index, key in ipairs(p2iblocks) do
+           key:setBlock(133, p2icurrent);
+           i2:setSign('Status', 'Chamber India:', '', 'Completed');
+		end
+	end
+end
+
+function chambers_sign2_i2(data)
+	local player = Player:new(data.player);
+	if not player:hasPermission("runsafe.chambers.india") then
+	   for index, key in ipairs(p2iblocks) do
+           key:setBlock(152, p2icurrent);
+           i2:setSign('Status', 'Chamber India:', '', 'NO DATA');
+		end
+	end
+end
+
+function chambers_sign2_r1(data)
+	local player = Player:new(data.player);
+	if player:hasPermission("runsafe.chambers.rabbiton") then
+	   for index, key in ipairs(p2rblocks) do
+           key:setBlock(133, p2rcurrent);
+           r2:setSign('Status', 'Rabbiton:', 'Mystery', 'Completed');
+		end
+	end
+end
+
+function chambers_sign2_r2(data)
+	local player = Player:new(data.player);
+	if not player:hasPermission("runsafe.chambers.rabbiton") then
+	   for index, key in ipairs(p2rblocks) do
+           key:setBlock(152, p2rcurrent);
+           r2:setSign('Status', 'Rabbiton:', 'Mystery', 'NO DATA');
+		end
+	end
+end
+
+registerHook("REGION_ENTER", "chambers_sign2_a1", "chambers-chamber_check");
+registerHook("REGION_ENTER", "chambers_sign2_a2", "chambers-chamber_check");
+registerHook("REGION_ENTER", "chambers_sign2_b1", "chambers-chamber_check");
+registerHook("REGION_ENTER", "chambers_sign2_b2", "chambers-chamber_check");
+registerHook("REGION_ENTER", "chambers_sign2_c1", "chambers-chamber_check");
+registerHook("REGION_ENTER", "chambers_sign2_c2", "chambers-chamber_check");
+registerHook("REGION_ENTER", "chambers_sign2_d1", "chambers-chamber_check");
+registerHook("REGION_ENTER", "chambers_sign2_d2", "chambers-chamber_check");
+registerHook("REGION_ENTER", "chambers_sign2_e1", "chambers-chamber_check");
+registerHook("REGION_ENTER", "chambers_sign2_e2", "chambers-chamber_check");
+registerHook("REGION_ENTER", "chambers_sign2_f1", "chambers-chamber_check");
+registerHook("REGION_ENTER", "chambers_sign2_f2", "chambers-chamber_check");
+registerHook("REGION_ENTER", "chambers_sign2_g1", "chambers-chamber_check");
+registerHook("REGION_ENTER", "chambers_sign2_g2", "chambers-chamber_check");
+registerHook("REGION_ENTER", "chambers_sign2_h1", "chambers-chamber_check");
+registerHook("REGION_ENTER", "chambers_sign2_h2", "chambers-chamber_check");
+registerHook("REGION_ENTER", "chambers_sign2_i1", "chambers-chamber_check");
+registerHook("REGION_ENTER", "chambers_sign2_i2", "chambers-chamber_check");
+registerHook("REGION_ENTER", "chambers_sign2_r1", "chambers-chamber_check");
+registerHook("REGION_ENTER", "chambers_sign2_r2", "chambers-chamber_check");
