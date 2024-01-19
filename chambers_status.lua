@@ -388,7 +388,7 @@ function chambers_sign_r1(data)
 	if player:hasPermission("runsafe.chambers.rabbiton") then
 	   for index, key in ipairs(p1rblocks) do
            key:setBlock(133, p1rcurrent);
-           r:setSign('Status', 'Rabbiton:', 'Mystery', 'Completed');
+           r:setSign('BONUS', 'Rabbiton:', 'Mystery', 'Completed');
 		end
 	end
 end
@@ -398,7 +398,7 @@ function chambers_sign_r2(data)
 	if not player:hasPermission("runsafe.chambers.rabbiton") then
 	   for index, key in ipairs(p1rblocks) do
            key:setBlock(152, p1rcurrent);
-           r:setSign('Status', 'Rabbiton:', 'Mystery', 'NO DATA');
+           r:setSign('BONUS', 'Rabbiton:', 'Mystery', 'NO DATA');
 		end
 	end
 end
@@ -626,7 +626,7 @@ function chambers_sign2_r1(data)
 	if player:hasPermission("runsafe.chambers.rabbiton") then
 	   for index, key in ipairs(p2rblocks) do
            key:setBlock(133, p2rcurrent);
-           2r:setSign('Status', 'Rabbiton:', 'Mystery', 'Completed');
+           2r:setSign('BONUS', 'Rabbiton:', 'Mystery', 'Completed');
 		end
 	end
 end
@@ -636,7 +636,7 @@ function chambers_sign2_r2(data)
 	if not player:hasPermission("runsafe.chambers.rabbiton") then
 	   for index, key in ipairs(p2rblocks) do
            key:setBlock(152, p2rcurrent);
-           2r:setSign('Status', 'Rabbiton:', 'Mystery', 'NO DATA');
+           2r:setSign('BONUS', 'Rabbiton:', 'Mystery', 'NO DATA');
 		end
 	end
 end
