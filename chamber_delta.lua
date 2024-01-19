@@ -260,3 +260,64 @@ registerHook("REGION_ENTER", "d2_exitwipe", "chambers-d2_setstone");
 
 --delta 3
 
+local d3reset1 = Location:new(world, 5118, 94, 1121);
+
+--floor1 redstone to air
+local world = "chambers";
+local D3R1current = 1;
+local D3R1maxData = 1;
+local D3R1blocks = {
+        Location:new(world, 5122.0, 89.0, 1116.0),
+	Location:new(world, 5119.0, 89.0, 1130.0),
+};
+
+--floor1 redstone reset
+local world = "chambers";
+local D3A1current = 1;
+local D3A1maxData = 1;
+local D3A1blocks = {
+        Location:new(world, 5121.0, 89.0, 1116.0),
+	Location:new(world, 5118.0, 89.0, 1130.0),
+};
+
+--floor1 1st door
+local world = "chambers";
+local D3E1current = 1;
+local D3E1maxData = 1;
+local D3E1blocks = {
+        Location:new(world, 5125.0, 92.0, 1114.0),
+	Location:new(world, 5125.0, 91.0, 1114.0),
+};
+
+function d3_1_reset1()
+        for index, key in ipairs(D3R1blocks) do
+                key:setBlock(0, D3R1current);
+		d3reset1:playSound('BLOCK_PISTON_CONTRACT', 0.3, 0.5);
+end
+end
+
+function d3_1_reset2()
+        for index, key in ipairs(D3A1blocks) do
+                key:setBlock(152, D3A1current);
+		d3reset1:playSound('BLOCK_PISTON_CONTRACT', 0.3, 0.5);
+end
+end
+
+function d3_1_exit1()
+        for index, key in ipairs(D3E1blocks) do
+                key:setBlock(0, D3E1current);
+		d3reset1:playSound('BLOCK_FENCE_GATE_OPEN', 0.3, 0.5);
+end
+end
+
+function d3_1_exit2()
+        for index, key in ipairs(D3E1blocks) do
+                key:setBlock(98, D3E1current);
+		d3reset1:playSound('BLOCK_FENCE_GATE_CLOSE', 0.3, 0.5);
+end
+end
+
+registerHook("INTERACT", "d3_1_reset1", 147, "chambers", 5121.0, 91.0, 1124.0);
+registerHook("INTERACT", "d3_1_reset2", 147, "chambers", 5121.0, 91.0, 1124.0);
+registerHook("BLOCK_GAINS_CURRENT", "d3_1_exit1", "chambers", 5126.0, 89.0, 1123.0);
+registerHook("REGION_ENTER", "d3_1_exit2", "chambers-d3_1_door");
