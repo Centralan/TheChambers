@@ -208,7 +208,7 @@ function chambers_sign_a1(data)
 	if player:hasPermission("runsafe.chambers.alpha") then
 	   for index, key in ipairs(p1ablocks) do
            key:setBlock(133, p1acurrent);
-           a:setSign('Status', 'Chamber Alpha:', '', 'Completed');
+           a:setSign('Chamber Of', 'Deception:', '', 'Completed');
 		end
 	end
 end
@@ -218,7 +218,7 @@ function chambers_sign_a2(data)
 	if not player:hasPermission("runsafe.chambers.alpha") then
 	   for index, key in ipairs(p1ablocks) do
            key:setBlock(152, p1acurrent);
-           a:setSign('Status', 'Chamber Alpha:', '', 'NO DATA');
+           a:setSign('Chamber Of', 'Deception:', '', 'NO DATA');
 		end
 	end
 end
@@ -228,7 +228,7 @@ function chambers_sign_b1(data)
 	if player:hasPermission("runsafe.chambers.bravo") then
 	   for index, key in ipairs(p1bblocks) do
            key:setBlock(133, p1bcurrent);
-           b:setSign('Status', 'Chamber Bravo:', '', 'Completed');
+           b:setSign('Chamber Of', 'Mirrors:', '', 'Completed');
 		end
 	end
 end
@@ -238,7 +238,7 @@ function chambers_sign_b2(data)
 	if not player:hasPermission("runsafe.chambers.bravo") then
 	   for index, key in ipairs(p1bblocks) do
            key:setBlock(152, p1bcurrent);
-           b:setSign('Status', 'Chamber Bravo:', '', 'NO DATA');
+           b:setSign('Chamber Of', 'Mirrors:', '', 'NO DATA');
 		end
 	end
 end
@@ -248,7 +248,7 @@ function chambers_sign_c1(data)
 	if player:hasPermission("runsafe.chambers.charile") then
 	   for index, key in ipairs(p1cblocks) do
            key:setBlock(133, p1ccurrent);
-           c:setSign('Status', 'Chamber Charlie:', '', 'Completed');
+           c:setSign('Chamber Of', 'Stamina:', '', 'Completed');
 		end
 	end
 end
@@ -258,7 +258,7 @@ function chambers_sign_c2(data)
 	if not player:hasPermission("runsafe.chambers.charile") then
 	   for index, key in ipairs(p1cblocks) do
            key:setBlock(152, p1ccurrent);
-           c:setSign('Status', 'Chamber Charlie:', '', 'NO DATA');
+           c:setSign('Chamber Of', 'Stamina:', '', 'NO DATA');
 		end
 	end
 end
@@ -268,7 +268,7 @@ function chambers_sign_d1(data)
 	if player:hasPermission("runsafe.chambers.delta") then
 	   for index, key in ipairs(p1dblocks) do
            key:setBlock(133, p1dcurrent);
-           d:setSign('Status', 'Chamber Delta:', '', 'Completed');
+           d:setSign('Chamber Of', 'Knowledge:', '', 'Completed');
 		end
 	end
 end
@@ -278,7 +278,7 @@ function chambers_sign_d2(data)
 	if not player:hasPermission("runsafe.chambers.delta") then
 	   for index, key in ipairs(p1dblocks) do
            key:setBlock(152, p1dcurrent);
-           d:setSign('Status', 'Chamber Delta:', '', 'NO DATA');
+           d:setSign('Chamber Of', 'Knowledge:', '', 'NO DATA');
 		end
 	end
 end
@@ -288,7 +288,7 @@ function chambers_sign_e1(data)
 	if player:hasPermission("runsafe.chambers.echo") then
 	   for index, key in ipairs(p1eblocks) do
            key:setBlock(133, p1beurrent);
-           e:setSign('Status', 'Chamber Echo:', '', 'Completed');
+           e:setSign('Chamber Of', 'tbd:', '', 'Completed');
 		end
 	end
 end
@@ -298,7 +298,7 @@ function chambers_sign_e2(data)
 	if not player:hasPermission("runsafe.chambers.echo") then
 	   for index, key in ipairs(p1eblocks) do
            key:setBlock(152, p1ecurrent);
-           e:setSign('Status', 'Chamber Echo:', '', 'NO DATA');
+           e:setSign('Chamber Of', 'tbd:', '', 'NO DATA');
 		end
 	end
 end
@@ -308,7 +308,7 @@ function chambers_sign_f1(data)
 	if player:hasPermission("runsafe.chambers.foxtrot") then
 	   for index, key in ipairs(p1fblocks) do
            key:setBlock(133, p1fcurrent);
-           f:setSign('Status', 'Chamber Foxtrot:', '', 'Completed');
+           f:setSign('Chamber Of', 'tbd:', '', 'Completed');
 		end
 	end
 end
@@ -318,7 +318,7 @@ function chambers_sign_f2(data)
 	if not player:hasPermission("runsafe.chambers.foxtrot") then
 	   for index, key in ipairs(p1fblocks) do
            key:setBlock(152, p1fcurrent);
-           f:setSign('Status', 'Chamber Foxtrot:', '', 'NO DATA');
+           f:setSign('Chamber Of', 'tbd:', '', 'NO DATA');
 		end
 	end
 end
@@ -328,7 +328,7 @@ function chambers_sign_g1(data)
 	if player:hasPermission("runsafe.chambers.golf") then
 	   for index, key in ipairs(p1gblocks) do
            key:setBlock(133, p1gcurrent);
-           g:setSign('Status', 'Chamber Golf:', '', 'Completed');
+           g:setSign('Chamber Of', 'tbd:', '', 'Completed');
 		end
 	end
 end
@@ -338,7 +338,7 @@ function chambers_sign_g2(data)
 	if not player:hasPermission("runsafe.chambers.golf") then
 	   for index, key in ipairs(p1gblocks) do
            key:setBlock(152, p1gcurrent);
-           g:setSign('Status', 'Chamber Golf:', '', 'NO DATA');
+           g:setSign('Chamber Of', 'tbd:', '', 'NO DATA');
 		end
 	end
 end
@@ -348,7 +348,7 @@ function chambers_sign_h1(data)
 	if player:hasPermission("runsafe.chambers.hotel") then
 	   for index, key in ipairs(p1hblocks) do
            key:setBlock(133, p1hcurrent);
-           h:setSign('Status', 'Chamber Hotel:', '', 'Completed');
+           h:setSign('Chamber Of', 'tbd:', '', 'Completed');
 		end
 	end
 end
@@ -358,7 +358,7 @@ function chambers_sign_h2(data)
 	if not player:hasPermission("runsafe.chambers.hotel") then
 	   for index, key in ipairs(p1hblocks) do
            key:setBlock(152, p1hcurrent);
-           h:setSign('Status', 'Chamber Hotel:', '', 'NO DATA');
+           h:setSign('Chamber Of', 'tbd:', '', 'NO DATA');
 		end
 	end
 end
@@ -368,7 +368,7 @@ function chambers_sign_i1(data)
 	if player:hasPermission("runsafe.chambers.india") then
 	   for index, key in ipairs(p1iblocks) do
            key:setBlock(133, p1icurrent);
-           i:setSign('Status', 'Chamber India:', '', 'Completed');
+           i:setSign('Chamber Of', 'tbd:', '', 'Completed');
 		end
 	end
 end
@@ -378,7 +378,7 @@ function chambers_sign_i2(data)
 	if not player:hasPermission("runsafe.chambers.india") then
 	   for index, key in ipairs(p1iblocks) do
            key:setBlock(152, p1icurrent);
-           i:setSign('Status', 'Chamber India:', '', 'NO DATA');
+           i:setSign('Chamber Of', 'tbd:', '', 'NO DATA');
 		end
 	end
 end
@@ -388,7 +388,7 @@ function chambers_sign_r1(data)
 	if player:hasPermission("runsafe.chambers.rabbiton") then
 	   for index, key in ipairs(p1rblocks) do
            key:setBlock(133, p1rcurrent);
-           r:setSign('BONUS', 'Rabbiton:', 'Mystery', 'Completed');
+           r:setSign('BONUS', '-Rabbiton-', '-Mystery-', 'Completed');
 		end
 	end
 end
@@ -398,7 +398,7 @@ function chambers_sign_r2(data)
 	if not player:hasPermission("runsafe.chambers.rabbiton") then
 	   for index, key in ipairs(p1rblocks) do
            key:setBlock(152, p1rcurrent);
-           r:setSign('BONUS', 'Rabbiton:', 'Mystery', 'NO DATA');
+           r:setSign('BONUS', '-Rabbiton-', '-Mystery-', 'NO DATA');
 		end
 	end
 end
@@ -430,23 +430,23 @@ registerHook("REGION_ENTER", "chambers_sign_r2", "chambers-chamber_check");
 --  Podium 2 --
 ----------------
 
-local 2a = Location:new(world, 4991.0, 91.0, 474.0);
-local 2b = Location:new(world, 4989.0, 91.0, 475.0);
-local 2c = Location:new(world, 4987.0, 91.0, 475.0);
-local 2d = Location:new(world, 4985.0, 91.0, 474.0);
-local 2e = Location:new(world, 4984.0, 91.0, 472.0);
-local 2f = Location:new(world, 4984.0, 91.0, 470.0);
-local 2g = Location:new(world, 4985.0, 91.0, 468.0);
-local 2h = Location:new(world, 4987.0, 91.0, 467.0);
-local 2i = Location:new(world, 4989.0, 91.0, 467.0);
-local 2r = Location:new(world, 4991.0, 91.0, 468.0);
+local a2 = Location:new(world, 4991.0, 91.0, 474.0);
+local b2 = Location:new(world, 4989.0, 91.0, 475.0);
+local c2 = Location:new(world, 4987.0, 91.0, 475.0);
+local d2 = Location:new(world, 4985.0, 91.0, 474.0);
+local e2 = Location:new(world, 4984.0, 91.0, 472.0);
+local f2 = Location:new(world, 4984.0, 91.0, 470.0);
+local g2 = Location:new(world, 4985.0, 91.0, 468.0);
+local h2 = Location:new(world, 4987.0, 91.0, 467.0);
+local i2 = Location:new(world, 4989.0, 91.0, 467.0);
+local r2 = Location:new(world, 4991.0, 91.0, 468.0);
 
 function chambers_sign2_a1(data)
 	local player = Player:new(data.player);
 	if player:hasPermission("runsafe.chambers.alpha") then
 	   for index, key in ipairs(p2ablocks) do
            key:setBlock(133, p2acurrent);
-           2a:setSign('Status', 'Chamber Alpha:', '', 'Completed');
+           a2:setSign('Chamber Of', 'Deception:', '', 'Completed');
 		end
 	end
 end
@@ -456,7 +456,7 @@ function chambers_sign2_a2(data)
 	if not player:hasPermission("runsafe.chambers.alpha") then
 	   for index, key in ipairs(p2ablocks) do
            key:setBlock(152, p2acurrent);
-           2a:setSign('Status', 'Chamber Alpha:', '', 'NO DATA');
+           a2:setSign('Chamber Of', 'Deception:', '', 'NO DATA');
 		end
 	end
 end
@@ -466,7 +466,7 @@ function chambers_sign2_b1(data)
 	if player:hasPermission("runsafe.chambers.bravo") then
 	   for index, key in ipairs(p2bblocks) do
            key:setBlock(133, p2bcurrent);
-           2b:setSign('Status', 'Chamber Bravo:', '', 'Completed');
+           b2:setSign('Chamber Of', 'Mirrors:', '', 'Completed');
 		end
 	end
 end
@@ -476,7 +476,7 @@ function chambers_sign2_b2(data)
 	if not player:hasPermission("runsafe.chambers.bravo") then
 	   for index, key in ipairs(p2bblocks) do
            key:setBlock(152, p2bcurrent);
-           2b:setSign('Status', 'Chamber Bravo:', '', 'NO DATA');
+           b2:setSign('Chamber Of', 'Mirrors:', '', 'NO DATA');
 		end
 	end
 end
@@ -486,7 +486,7 @@ function chambers_sign2_c1(data)
 	if player:hasPermission("runsafe.chambers.charile") then
 	   for index, key in ipairs(p2cblocks) do
            key:setBlock(133, p2ccurrent);
-           2c:setSign('Status', 'Chamber Charlie:', '', 'Completed');
+           c2:setSign('Chamber Of', 'Stamina:', '', 'Completed');
 		end
 	end
 end
@@ -496,7 +496,7 @@ function chambers_sign2_c2(data)
 	if not player:hasPermission("runsafe.chambers.charile") then
 	   for index, key in ipairs(p2cblocks) do
            key:setBlock(152, p2ccurrent);
-           2c:setSign('Status', 'Chamber Charlie:', '', 'NO DATA');
+           c2:setSign('Chamber Of', 'Stamina:', '', 'NO DATA');
 		end
 	end
 end
@@ -506,7 +506,7 @@ function chambers_sign2_d1(data)
 	if player:hasPermission("runsafe.chambers.delta") then
 	   for index, key in ipairs(p2dblocks) do
            key:setBlock(133, p2dcurrent);
-           2d:setSign('Status', 'Chamber Delta:', '', 'Completed');
+           d2:setSign('Chamber Of', 'Knowledge:', '', 'Completed');
 		end
 	end
 end
@@ -516,7 +516,7 @@ function chambers_sign2_d2(data)
 	if not player:hasPermission("runsafe.chambers.delta") then
 	   for index, key in ipairs(p2dblocks) do
            key:setBlock(152, p2dcurrent);
-           2d:setSign('Status', 'Chamber Delta:', '', 'NO DATA');
+           d2:setSign('Chamber Of', 'Knowledge:', '', 'NO DATA');
 		end
 	end
 end
@@ -526,7 +526,7 @@ function chambers_sign2_e1(data)
 	if player:hasPermission("runsafe.chambers.echo") then
 	   for index, key in ipairs(p2eblocks) do
            key:setBlock(133, p2beurrent);
-           2d:setSign('Status', 'Chamber Echo:', '', 'Completed');
+           e2:setSign('Chamber Of', 'tbd:', '', 'Completed');
 		end
 	end
 end
@@ -536,7 +536,7 @@ function chambers_sign2_e2(data)
 	if not player:hasPermission("runsafe.chambers.echo") then
 	   for index, key in ipairs(p2eblocks) do
            key:setBlock(152, p2ecurrent);
-           2d:setSign('Status', 'Chamber Echo:', '', 'NO DATA');
+           e2:setSign('Chamber Of', 'tbd:', '', 'NO DATA');
 		end
 	end
 end
@@ -546,7 +546,7 @@ function chambers_sign2_f1(data)
 	if player:hasPermission("runsafe.chambers.foxtrot") then
 	   for index, key in ipairs(p2fblocks) do
            key:setBlock(133, p2fcurrent);
-           2f:setSign('Status', 'Chamber Foxtrot:', '', 'Completed');
+           f2:setSign('Chamber Of', 'tbd:', '', 'Completed');
 		end
 	end
 end
@@ -556,7 +556,7 @@ function chambers_sign2_f2(data)
 	if not player:hasPermission("runsafe.chambers.foxtrot") then
 	   for index, key in ipairs(p2fblocks) do
            key:setBlock(152, p2fcurrent);
-           2f:setSign('Status', 'Chamber Foxtrot:', '', 'NO DATA');
+           f2:setSign('Chamber Of', 'tbd:', '', 'NO DATA');
 		end
 	end
 end
@@ -566,7 +566,7 @@ function chambers_sign2_g1(data)
 	if player:hasPermission("runsafe.chambers.golf") then
 	   for index, key in ipairs(p2gblocks) do
            key:setBlock(133, p2gcurrent);
-           2g:setSign('Status', 'Chamber Golf:', '', 'Completed');
+           g2:setSign('Chamber Of', 'tbd:', '', 'Completed');
 		end
 	end
 end
@@ -576,7 +576,7 @@ function chambers_sign2_g2(data)
 	if not player:hasPermission("runsafe.chambers.golf") then
 	   for index, key in ipairs(p2gblocks) do
            key:setBlock(152, p2gcurrent);
-           2g:setSign('Status', 'Chamber Golf:', '', 'NO DATA');
+           g2:setSign('Chamber Of', 'tbd:', '', 'NO DATA');
 		end
 	end
 end
@@ -586,7 +586,7 @@ function chambers_sign2_h1(data)
 	if player:hasPermission("runsafe.chambers.hotel") then
 	   for index, key in ipairs(p2hblocks) do
            key:setBlock(133, p2hcurrent);
-           2h:setSign('Status', 'Chamber Hotel:', '', 'Completed');
+           h2:setSign('Chamber Of', 'tbd:', '', 'Completed');
 		end
 	end
 end
@@ -596,7 +596,7 @@ function chambers_sign2_h2(data)
 	if not player:hasPermission("runsafe.chambers.hotel") then
 	   for index, key in ipairs(p2hblocks) do
            key:setBlock(152, p2hcurrent);
-           2h:setSign('Status', 'Chamber Hotel:', '', 'NO DATA');
+           h2:setSign('Chamber Of', 'tbd:', '', 'NO DATA');
 		end
 	end
 end
@@ -606,7 +606,7 @@ function chambers_sign2_i1(data)
 	if player:hasPermission("runsafe.chambers.india") then
 	   for index, key in ipairs(p2iblocks) do
            key:setBlock(133, p2icurrent);
-           2i:setSign('Status', 'Chamber India:', '', 'Completed');
+           i2:setSign('Chamber Of', 'tbd:', '', 'Completed');
 		end
 	end
 end
@@ -616,7 +616,7 @@ function chambers_sign2_i2(data)
 	if not player:hasPermission("runsafe.chambers.india") then
 	   for index, key in ipairs(p2iblocks) do
            key:setBlock(152, p2icurrent);
-           2i:setSign('Status', 'Chamber India:', '', 'NO DATA');
+           i2:setSign('Chamber Of', 'tbd:', '', 'NO DATA');
 		end
 	end
 end
@@ -626,7 +626,7 @@ function chambers_sign2_r1(data)
 	if player:hasPermission("runsafe.chambers.rabbiton") then
 	   for index, key in ipairs(p2rblocks) do
            key:setBlock(133, p2rcurrent);
-           2r:setSign('BONUS', 'Rabbiton:', 'Mystery', 'Completed');
+           r2:setSign('BONUS', '-Rabbiton-', '-Mystery-', 'Completed');
 		end
 	end
 end
@@ -636,7 +636,7 @@ function chambers_sign2_r2(data)
 	if not player:hasPermission("runsafe.chambers.rabbiton") then
 	   for index, key in ipairs(p2rblocks) do
            key:setBlock(152, p2rcurrent);
-           2r:setSign('BONUS', 'Rabbiton:', 'Mystery', 'NO DATA');
+           r2:setSign('BONUS', '-Rabbiton-', '-Mystery-', 'NO DATA');
 		end
 	end
 end
