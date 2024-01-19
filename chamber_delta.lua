@@ -321,3 +321,5 @@ registerHook("INTERACT", "d3_1_reset1", 147, "chambers", 5121.0, 91.0, 1124.0);
 registerHook("INTERACT", "d3_1_reset2", 147, "chambers", 5121.0, 91.0, 1124.0);
 registerHook("BLOCK_GAINS_CURRENT", "d3_1_exit1", "chambers", 5126.0, 89.0, 1123.0);
 registerHook("REGION_ENTER", "d3_1_exit2", "chambers-d3_1_door");
+registerHook("REGION_ENTER", "d3_1_reset1", "chambers-d3_1_door");
+registerHook("REGION_ENTER", "d3_1_reset2", "chambers-d3_1_door");
