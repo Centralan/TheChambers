@@ -391,7 +391,7 @@ function chamer_d_complete(data)
                 player:setHealth(20);
                 player:teleport(c_spawn);
 	        player:clearInventory();
-	        bot:speak( player.name .. " has completed &6Chamber Delta&f.");
+	        bot:speak( player.name .. " has completed the &cChamber of Knowledge&f.");
                 player:playSound('UI_TOAST_CHALLENGE_COMPLETE', 1, 1);
 	        player:addPermission("runsafe.chambers.delta"); 
 end
