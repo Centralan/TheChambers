@@ -285,7 +285,7 @@ function chamer_b_complete(data)
                 player:setHealth(20);
                 player:teleport(c_spawn);
 	        player:clearInventory();
-	        bot:speak( player.name .. " has completed &6Chamber Bravo&f.");
+	        bot:speak( player.name .. " has completed the &aChamber of Mirrors&f.");
                 player:playSound('UI_TOAST_CHALLENGE_COMPLETE', 1, 1);
 	        player:addPermission("runsafe.chambers.bravo"); 
 end
