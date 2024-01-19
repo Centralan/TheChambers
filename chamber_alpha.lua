@@ -113,7 +113,7 @@ function chamer_a_complete(data)
                 player:setHealth(20);
                 player:teleport(c_spawn);
 	        player:clearInventory();
-	        bot:speak( player.name .. " has completed &6Chamber Alpha&f.");
+	        bot:speak( player.name .. " has completed the &9Chamber of Deception&f.");
                 player:playSound('UI_TOAST_CHALLENGE_COMPLETE', 1, 1);
 	        player:addPermission("runsafe.chambers.alpha"); 
 end
