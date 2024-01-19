@@ -2630,7 +2630,7 @@ function chamer_c_complete(data)
                 player:setHealth(20);
                 player:teleport(c_spawn);
 	        player:clearInventory();
-	        bot:speak( player.name .. " has completed &6Chamber Charlie&f.");
+	        bot:speak( player.name .. " has completed the &eChamber of Stamina&f.");
                 player:playSound('UI_TOAST_CHALLENGE_COMPLETE', 1, 1);
 	        player:addPermission("runsafe.chambers.charile"); 
 end
