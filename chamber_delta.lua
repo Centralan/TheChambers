@@ -320,9 +320,18 @@ function d3_2_exit2()
 end
 end
 
+function d3_2_clear1(data)
+        local player = Player:new(data.player);
+                player:clearInventory();
+end
+
+
+
 registerHook("INTERACT", "d3_chest1", 148, "chambers", 5116.0, 97.0, 1098.0);
 registerHook("BLOCK_GAINS_CURRENT", "d3_2_exit1", "chambers", 5118.0, 95.0, 1121.0);
 registerHook("REGION_ENTER", "d3_2_exit2", "chambers-d3_2_dr");
+registerHook("REGION_ENTER", "d3_2_clear1", "chambers-d3_2_dr");
+
 
 --floor 3
 
