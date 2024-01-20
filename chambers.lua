@@ -164,6 +164,7 @@ function chamber_g_tp(data)
     player:teleport(chamber_g);
     player:sendTitle("Welcome To The", "&3Chamber Of Desolation");
     player:playSound('ENTITY_EVOCATION_ILLAGER_PREPARE_SUMMON', 1, 0.5);
+    player:clearInventory();
 end
 
 
