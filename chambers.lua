@@ -114,6 +114,10 @@ local chamber_e = Location:new(world, 4956.505, 100.0, 1086.511);
 chamber_e:setYaw(89.2);
 chamber_e:setPitch(10.7);
 
+local chamber_g = Location:new(world, 2001.500, 184.0, 2175.511);
+chamber_g:setYaw(179.7);
+chamber_g:setPitch(0.3);
+
 function chamber_a_tp(data)
   local player = Player:new(data.player);
     player:teleport(chamber_a);
@@ -155,10 +159,18 @@ function chamber_e_tp(data)
     player:clearInventory();
 end
 
+function chamber_g_tp(data)
+  local player = Player:new(data.player);
+    player:teleport(chamber_g);
+    player:sendTitle("Welcome To The", "&3Chamber Of Desolation");
+    player:playSound('ENTITY_EVOCATION_ILLAGER_PREPARE_SUMMON', 1, 0.5);
+end
+
 
 registerHook("REGION_ENTER", "chamber_a_tp", "chambers-chamber_a")
 registerHook("REGION_ENTER", "chamber_b_tp", "chambers-chamber_b")
 registerHook("REGION_ENTER", "chamber_c_tp", "chambers-chamber_c")
 registerHook("REGION_ENTER", "chamber_d_tp", "chambers-chamber_d")
 registerHook("REGION_ENTER", "chamber_e_tp", "chambers-chamber_e")
+registerHook("REGION_ENTER", "chamber_g_tp", "chambers-chamber_g")
 
