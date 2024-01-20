@@ -28,6 +28,7 @@ function welcome_1(data)
         local player = Player:new(data["player"]);
         EventEngine.player.addPotionEffect(player.name, 'BLINDNESS', 100, 4);
 	player:sendTitle("&a&lWelcome To", "&2&lThe Chambers");
+	player:setMode("ADVENTURE");
         player:playSound('ENTITY_SHULKER_AMBIENT', 1, 0.5);
         player:addPermission("runsafe.warp.use.chambers");
 end
@@ -121,6 +122,7 @@ chamber_g:setPitch(0.3);
 function chamber_a_tp(data)
   local player = Player:new(data.player);
     player:teleport(chamber_a);
+    player:setMode("ADVENTURE");
     player:sendTitle("Welcome To The", "&bChamber Of Deception");
     player:playSound('ENTITY_EVOCATION_ILLAGER_PREPARE_SUMMON', 1, 0.5);
     player:clearInventory();
@@ -129,6 +131,7 @@ end
 function chamber_b_tp(data)
   local player = Player:new(data.player);
     player:teleport(chamber_b);
+    player:setMode("ADVENTURE");
     player:sendTitle("Welcome To The", "&aChamber Of Mirrors");
     b1chest:cloneChestToPlayer(player.name);
     player:playSound('ENTITY_EVOCATION_ILLAGER_PREPARE_SUMMON', 1, 0.5);
@@ -138,6 +141,7 @@ end
 function chamber_c_tp(data)
   local player = Player:new(data.player);
     player:teleport(chamber_c);
+    player:setMode("ADVENTURE");
     player:sendTitle("Welcome To The", "&eChamber Of Stamina");
     player:playSound('ENTITY_EVOCATION_ILLAGER_PREPARE_SUMMON', 1, 0.5);
     player:clearInventory();
@@ -146,6 +150,7 @@ end
 function chamber_d_tp(data)
   local player = Player:new(data.player);
     player:teleport(chamber_d);
+    player:setMode("ADVENTURE");
     player:sendTitle("Welcome To The", "&cChamber Of Knowledge");
     player:playSound('ENTITY_EVOCATION_ILLAGER_PREPARE_SUMMON', 1, 0.5);
     player:clearInventory();
@@ -154,6 +159,7 @@ end
 function chamber_e_tp(data)
   local player = Player:new(data.player);
     player:teleport(chamber_e);
+    player:setMode("ADVENTURE");
     player:sendTitle("Welcome To The", "&5Chamber Of tbd");
     player:playSound('ENTITY_EVOCATION_ILLAGER_PREPARE_SUMMON', 1, 0.5);
     player:clearInventory();
@@ -162,6 +168,7 @@ end
 function chamber_g_tp(data)
   local player = Player:new(data.player);
     player:teleport(chamber_g);
+    player:setMode("ADVENTURE");
     player:sendTitle("Welcome To The", "&3Chamber Of Desolation");
     player:playSound('ENTITY_EVOCATION_ILLAGER_PREPARE_SUMMON', 1, 0.5);
     player:clearInventory();
