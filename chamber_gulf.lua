@@ -34,7 +34,7 @@ function chamer_g_reset(data)
         player:teleport(g_spawn);
         player:sendMessage("&7The spikes reach out to you");
         player:sendMessage("&7Almost like something is controlling them...");
-        player:playSound('ENTITY_ILLUSION_ILLAGER_MIRROR_MOVE', 1, 0.5);
+        player:playSound('ENTITY_ILLUSION_ILLAGER_PREPARE_BLINDNESS', 1, 0.5);
         EventEngine.player.addPotionEffect(player.name, 'BLINDNESS', 100, 4);
         EventEngine.player.addPotionEffect(player.name, 'CONFUSION', 100, 5);
 end
