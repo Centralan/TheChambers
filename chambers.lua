@@ -122,7 +122,7 @@ local chamber_c = Location:new(world, 5000.657, 100.0, 1500.570);
 chamber_c:setYaw(-89.4);
 chamber_c:setPitch(4.8);
 
-local chamber_d = Location:new(world, 5056.551, 100.0, 1091.517);
+local chamber_d = Location:new(world, 5056.551, 105.0, 1091.517);
 chamber_d:setYaw(-89.4);
 chamber_d:setPitch(4.8);
 
@@ -162,8 +162,6 @@ function chamber_c_tp(data)
     player:clearInventory();
 end
 
-local d1BossBar = BossBar:new()
-
 function chamber_d_tp(data)
   local player = Player:new(data.player);
     player:teleport(chamber_d);
@@ -171,12 +169,6 @@ function chamber_d_tp(data)
     player:sendTitle("Welcome To The", "&cChamber Of Knowledge");
     player:playSound('ENTITY_EVOCATION_ILLAGER_PREPARE_SUMMON', 1, 0.5);
     player:clearInventory();
-    d1BossBar:createBossBar("Knowledge - Room Progress")     
-    d1BossBar:setColour("red")  
-    d1BossBar:addPlayer(data.player)
-    d1BossBar:setStyle("solid")
-    d1BossBar:setProgress(0.1)
-    d1BossBar:setVisible(true)
 end
 
 function chamber_e_tp(data)
