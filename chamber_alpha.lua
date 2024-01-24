@@ -283,6 +283,62 @@ function a12e(data)
         a12BossBar:setVisible(false)
 end
 
+function a1_b1_clear(data)
+    local player = Player:new(data.player);
+
+    -- Check and clear a1BossBar
+    if a1BossBar then
+        a1BossBar:setVisible(false)
+    end
+
+    -- Check and clear a2BossBar
+    if a2BossBar then
+        a2BossBar:setVisible(false)
+    end
+
+    -- Check and clear a3BossBar
+    if a3BossBar then
+        a3BossBar:setVisible(false)
+    end
+
+    -- Check and clear a4BossBar
+    if a4BossBar then
+        a4BossBar:setVisible(false)
+    end
+
+    -- Check and clear a5BossBar
+    if a5BossBar then
+        a5BossBar:setVisible(false)
+    end
+
+    -- Check and clear a6BossBar
+    if a6BossBar then
+        a6BossBar:setVisible(false)
+    end
+
+    -- Check and clear a8BossBar
+    if a8BossBar then
+        a8BossBar:setVisible(false)
+    end
+
+    -- Check and clear a9BossBar
+    if a9BossBar then
+        a9BossBar:setVisible(false)
+    end
+
+    -- Check and clear a11BossBar
+    if a11BossBar then
+        a11BossBar:setVisible(false)
+    end
+
+    -- Check and clear a12BossBar
+    if a12BossBar then
+        a12BossBar:setVisible(false)
+    end
+end
+
+registerHook("REGION_ENTER", "a1_b1_clear", "chambers-a_b1_clear");
+registerHook("REGION_LEAVE", "a1_b1_clear", "chambers-a_1_barclear");
 registerHook("REGION_ENTER", "a1", "chambers-a_b1_1");
 registerHook("REGION_ENTER", "a1e", "chambers-a_b1_2");
 registerHook("REGION_ENTER", "a2", "chambers-a_b1_2");
