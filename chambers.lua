@@ -162,6 +162,8 @@ function chamber_c_tp(data)
     player:clearInventory();
 end
 
+local d1BossBar = BossBar:new()
+
 function chamber_d_tp(data)
   local player = Player:new(data.player);
     player:teleport(chamber_d);
@@ -169,6 +171,12 @@ function chamber_d_tp(data)
     player:sendTitle("Welcome To The", "&cChamber Of Knowledge");
     player:playSound('ENTITY_EVOCATION_ILLAGER_PREPARE_SUMMON', 1, 0.5);
     player:clearInventory();
+    d1BossBar:createBossBar("Knowledge - Room Progress")     
+    d1BossBar:setColour("red")  
+    d1BossBar:addPlayer(data.player)
+    d1BossBar:setStyle("solid")
+    d1BossBar:setProgress(0.1)
+    d1BossBar:setVisible(true)
 end
 
 function chamber_e_tp(data)
