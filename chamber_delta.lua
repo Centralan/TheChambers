@@ -397,3 +397,74 @@ function chamer_d_complete(data)
 end
 
 registerHook("REGION_ENTER", "chamer_d_complete", "chambers-d_complete");
+
+-- Boss Bar Progress Room 
+local d1BossBar = BossBar:new()
+
+function d1_get(data)
+  local player = Player:new(data.player);
+    d1BossBar:createBossBar("Knowledge - Chamber Progress")     
+    d1BossBar:setColour("red")  
+    d1BossBar:addPlayer(data.player)
+    d1BossBar:setStyle("solid")
+    d1BossBar:setProgress(0.1)
+    d1BossBar:setVisible(true)
+end
+
+function d1_1(data)
+	local player = Player:new(data.player);
+        d1BossBar:setProgress(0.2)
+end
+
+function d1_2(data)
+	local player = Player:new(data.player);
+        d1BossBar:setProgress(0.3)
+end
+
+function d1_3(data)
+	local player = Player:new(data.player);
+        d1BossBar:setProgress(0.4)
+end
+
+function d1_4(data)
+	local player = Player:new(data.player);
+	d1BossBar:setColour("yellow")
+        d1BossBar:setProgress(0.6)
+end
+
+function d1_5(data)
+	local player = Player:new(data.player);
+        d1BossBar:setProgress(0.7)
+end
+
+function d1_6(data)
+	local player = Player:new(data.player);
+        d1BossBar:setProgress(0.8)
+end
+
+function d1_7(data)
+	local player = Player:new(data.player);
+        d1BossBar:setProgress(0.9)
+end
+
+function d1_8(data)
+	local player = Player:new(data.player);
+	d1BossBar:setColour("green")
+        d1BossBar:setProgress(1)
+end
+
+function d1_remove(data)
+	local player = Player:new(data.player);
+        d1BossBar:setVisible(false)
+end
+
+registerHook("REGION_ENTER", "d1_get", "chambers-d1_getbar");
+registerHook("REGION_ENTER", "d1_1", "chambers-d_b1");
+registerHook("REGION_ENTER", "d1_2", "chambers-d9");
+registerHook("REGION_ENTER", "d1_3", "chambers-d_anvil");
+registerHook("REGION_ENTER", "d1_4", "chambers-d2_setstone");
+registerHook("REGION_ENTER", "d1_5", "chambers-d3_1_door");
+registerHook("REGION_ENTER", "d1_6", "chambers-d3_2_dr");
+registerHook("REGION_ENTER", "d1_7", "chambers-d3_9");
+registerHook("REGION_ENTER", "d1_8", "chambers-d3_done");
+registerHook("REGION_LEAVE", "d1_remove", "chambers-chat_d");
