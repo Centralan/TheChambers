@@ -337,7 +337,6 @@ function a1_b1_clear(data)
     end
 end
 
-registerHook("REGION_ENTER", "a1_b1_clear", "chambers-a_b1_clear");
 registerHook("REGION_LEAVE", "a1_b1_clear", "chambers-a_1_barclear");
 registerHook("REGION_ENTER", "a1", "chambers-a_b1_1");
 registerHook("REGION_ENTER", "a1e", "chambers-a_b1_2");
