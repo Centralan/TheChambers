@@ -357,4 +357,3 @@ registerHook("REGION_ENTER", "a9e", "chambers-a_b1_11");
 registerHook("REGION_ENTER", "a11", "chambers-a_b1_11");
 registerHook("REGION_ENTER", "a11e", "chambers-a_b1_12");
 registerHook("REGION_ENTER", "a12", "chambers-a_b1_12");
-registerHook("REGION_ENTER", "a12e", "chambers-a1_b12_e");
