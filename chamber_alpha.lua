@@ -123,237 +123,222 @@ registerHook("REGION_ENTER", "chamer_a_complete", "chambers-a_complete");
 
 -- Boss Bar Progress Room 1
 local a1BossBar = BossBar:new()
-local a2BossBar = BossBar:new()
-local a3BossBar = BossBar:new()
-local a4BossBar = BossBar:new()
-local a5BossBar = BossBar:new()
-local a6BossBar = BossBar:new()
-local a8BossBar = BossBar:new()
-local a9BossBar = BossBar:new()
-local a11BossBar = BossBar:new()
-local a12BossBar = BossBar:new()
 
 function a1(data)
 	local player = Player:new(data.player);
-        a1BossBar:createBossBar("Deception: Room Progress")     
+        a1BossBar:createBossBar("Deception - Room Progress")     
         a1BossBar:setColour("red")
         a1BossBar:addPlayer(data.player)
-        a1BossBar:setStyle("segmented10")
+        a1BossBar:setStyle("solid")
         a1BossBar:setProgress(0.1)
         a1BossBar:setVisible(true)
 end
 
 function a2(data)
 	local player = Player:new(data.player);
-        a2BossBar:createBossBar("Deception: Room Progress")     
-        a2BossBar:setColour("red")
-        a2BossBar:addPlayer(data.player)
-        a2BossBar:setStyle("segmented10")
-        a2BossBar:setProgress(0.2)
-        a2BossBar:setVisible(true)
+        a1BossBar:setProgress(0.2)
 end
 
 function a3(data)
 	local player = Player:new(data.player);
-        a3BossBar:createBossBar("Deception: Room Progress")     
-        a3BossBar:setColour("red")
-        a3BossBar:addPlayer(data.player)
-        a3BossBar:setStyle("segmented10")
-        a3BossBar:setProgress(0.3)
-        a3BossBar:setVisible(true)
+        a1BossBar:setProgress(0.3)
 end
 
 function a4(data)
 	local player = Player:new(data.player);
-        a4BossBar:createBossBar("Deception: Room Progress")     
-        a4BossBar:setColour("red")
-        a4BossBar:addPlayer(data.player)
-        a4BossBar:setStyle("segmented10")
-        a4BossBar:setProgress(0.4)
-        a4BossBar:setVisible(true)
+        a1BossBar:setProgress(0.3)
 end
 
 function a5(data)
-	local player = Player:new(data.player);
-        a5BossBar:createBossBar("Deception: Room Progress")     
-        a5BossBar:setColour("yellow")
-        a5BossBar:addPlayer(data.player)
-        a5BossBar:setStyle("segmented10")
-        a5BossBar:setProgress(0.5)
-        a5BossBar:setVisible(true)
+	local player = Player:new(data.player);    
+        a1BossBar:setColour("yellow")
+        a1BossBar:setProgress(0.5)
 end
 
 function a6(data)
 	local player = Player:new(data.player);
-        a6BossBar:createBossBar("Deception: Room Progress")     
-        a6BossBar:setColour("yellow")
-        a6BossBar:addPlayer(data.player)
-        a6BossBar:setStyle("segmented10")
-        a6BossBar:setProgress(0.6)
-        a6BossBar:setVisible(true)
+        a1BossBar:setProgress(0.6)
 end
 
 function a8(data)
 	local player = Player:new(data.player);
-        a8BossBar:createBossBar("Deception: Room Progress")     
-        a8BossBar:setColour("yellow")
-        a8BossBar:addPlayer(data.player)
-        a8BossBar:setStyle("segmented10")
-        a8BossBar:setProgress(0.7)
-        a8BossBar:setVisible(true)
+        a1BossBar:setProgress(0.7)
 end
 
 function a9(data)
 	local player = Player:new(data.player);
-        a9BossBar:createBossBar("Deception: Room Progress")     
-        a9BossBar:setColour("yellow")
-        a9BossBar:addPlayer(data.player)
-        a9BossBar:setStyle("segmented10")
-        a9BossBar:setProgress(0.8)
-        a9BossBar:setVisible(true)
+        a1BossBar:setProgress(0.8)
 end
 
 function a11(data)
 	local player = Player:new(data.player);
-        a11BossBar:createBossBar("Deception: Room Progress")     
-        a11BossBar:setColour("yellow")
-        a11BossBar:addPlayer(data.player)
-        a11BossBar:setStyle("segmented10")
-        a11BossBar:setProgress(0.9)
-        a11BossBar:setVisible(true)
+        a1BossBar:setProgress(0.9)
 end
 
 function a12(data)
 	local player = Player:new(data.player);
-        a12BossBar:createBossBar("Deception: Room Progress")     
-        a12BossBar:setColour("green")
-        a12BossBar:addPlayer(data.player)
-        a12BossBar:setStyle("segmented10")
-        a12BossBar:setProgress(1)
-        a12BossBar:setVisible(true)
+        a1BossBar:setColour("green")
+        a1BossBar:setProgress(1)
 end
 
-function a1e(data)
+function a1_remove(data)
 	local player = Player:new(data.player);
         a1BossBar:setVisible(false)
 end
 
-function a2e(data)
-	local player = Player:new(data.player);
-        a2BossBar:setVisible(false)
-end
-
-function a3e(data)
-	local player = Player:new(data.player);
-        a3BossBar:setVisible(false)
-end
-
-function a4e(data)
-	local player = Player:new(data.player);
-        a4BossBar:setVisible(false)
-end
-
-function a5e(data)
-	local player = Player:new(data.player);
-        a5BossBar:setVisible(false)
-end
-
-function a6e(data)
-	local player = Player:new(data.player);
-        a6BossBar:setVisible(false)
-end
-
-function a8e(data)
-	local player = Player:new(data.player);
-        a8BossBar:setVisible(false)
-end
-
-function a9e(data)
-	local player = Player:new(data.player);
-        a9BossBar:setVisible(false)
-end
-
-function a11e(data)
-	local player = Player:new(data.player);
-        a11BossBar:setVisible(false)
-end
-
-function a12e(data)
-	local player = Player:new(data.player);
-        a12BossBar:setVisible(false)
-end
-
-function a1_b1_clear(data)
-    local player = Player:new(data.player);
-
-    -- Check and clear a1BossBar
-    if a1BossBar then
-        a1BossBar:setVisible(false)
-    end
-
-    -- Check and clear a2BossBar
-    if a2BossBar then
-        a2BossBar:setVisible(false)
-    end
-
-    -- Check and clear a3BossBar
-    if a3BossBar then
-        a3BossBar:setVisible(false)
-    end
-
-    -- Check and clear a4BossBar
-    if a4BossBar then
-        a4BossBar:setVisible(false)
-    end
-
-    -- Check and clear a5BossBar
-    if a5BossBar then
-        a5BossBar:setVisible(false)
-    end
-
-    -- Check and clear a6BossBar
-    if a6BossBar then
-        a6BossBar:setVisible(false)
-    end
-
-    -- Check and clear a8BossBar
-    if a8BossBar then
-        a8BossBar:setVisible(false)
-    end
-
-    -- Check and clear a9BossBar
-    if a9BossBar then
-        a9BossBar:setVisible(false)
-    end
-
-    -- Check and clear a11BossBar
-    if a11BossBar then
-        a11BossBar:setVisible(false)
-    end
-
-    -- Check and clear a12BossBar
-    if a12BossBar then
-        a12BossBar:setVisible(false)
-    end
-end
-
-registerHook("REGION_LEAVE", "a1_b1_clear", "chambers-a_1_barclear");
 registerHook("REGION_ENTER", "a1", "chambers-a_b1_1");
-registerHook("REGION_ENTER", "a1e", "chambers-a_b1_2");
 registerHook("REGION_ENTER", "a2", "chambers-a_b1_2");
-registerHook("REGION_ENTER", "a2e", "chambers-a_b1_3");
 registerHook("REGION_ENTER", "a3", "chambers-a_b1_3");
-registerHook("REGION_ENTER", "a3e", "chambers-a_b1_4");
 registerHook("REGION_ENTER", "a4", "chambers-a_b1_4");
-registerHook("REGION_ENTER", "a4e", "chambers-a_b1_5");
 registerHook("REGION_ENTER", "a5", "chambers-a_b1_5");
-registerHook("REGION_ENTER", "a5e", "chambers-a_b1_6");
 registerHook("REGION_ENTER", "a6", "chambers-a_b1_6");
-registerHook("REGION_ENTER", "a6e", "chambers-a_b1_8");
 registerHook("REGION_ENTER", "a8", "chambers-a_b1_8");
-registerHook("REGION_ENTER", "a8e", "chambers-a_b1_9");
 registerHook("REGION_ENTER", "a9", "chambers-a_b1_9");
-registerHook("REGION_ENTER", "a9e", "chambers-a_b1_11");
 registerHook("REGION_ENTER", "a11", "chambers-a_b1_11");
-registerHook("REGION_ENTER", "a11e", "chambers-a_b1_12");
 registerHook("REGION_ENTER", "a12", "chambers-a_b1_12");
+registerHook("REGION_LEAVE", "a1_remove", "chambers-a_1_barclear");
+
+-- Boss Bar Progress Room 2
+local a2BossBar = BossBar:new()
+
+function a1_2(data)
+	local player = Player:new(data.player);
+        a2BossBar:createBossBar("Deception: Room Progress")     
+        a2BossBar:setColour("red")
+        a2BossBar:addPlayer(data.player)
+        a2BossBar:setStyle("solid")
+        a2BossBar:setProgress(0.1)
+        a2BossBar:setVisible(true)
+end
+
+function a2_2(data)
+	local player = Player:new(data.player);
+        a2BossBar:setProgress(0.2)
+end
+
+function a3_2(data)
+	local player = Player:new(data.player);
+        a2BossBar:setProgress(0.3)
+end
+
+function a4_2(data)
+	local player = Player:new(data.player);   
+        a2BossBar:setColour("yellow")
+        a2BossBar:setProgress(0.4)
+end
+
+function a5_2(data)
+	local player = Player:new(data.player);
+        a2BossBar:setProgress(0.6)
+end
+
+function a6_2(data)
+	local player = Player:new(data.player);
+        a2BossBar:setProgress(0.7)
+end
+
+function a7_2(data)
+	local player = Player:new(data.player);
+        a2BossBar:setProgress(0.8)
+end
+
+function a8_2(data)
+	local player = Player:new(data.player);    
+        a2BossBar:setColour("green")
+        a2BossBar:setProgress(1.0)
+end
+
+function a2_remove(data)
+	local player = Player:new(data.player);
+        a2BossBar:setVisible(false)
+end
+
+registerHook("REGION_ENTER", "a1_2", "chambers-a_b2_1");
+registerHook("REGION_ENTER", "a2_2", "chambers-a_b2_2");
+registerHook("REGION_ENTER", "a3_2", "chambers-a_b2_3");
+registerHook("REGION_ENTER", "a4_2", "chambers-a_b2_4");
+registerHook("REGION_ENTER", "a5_2", "chambers-a_b2_5");
+registerHook("REGION_ENTER", "a6_2", "chambers-a_b2_6");
+registerHook("REGION_ENTER", "a7_2", "chambers-a_b2_7");
+registerHook("REGION_ENTER", "a8_2", "chambers-a_b2_8");
+registerHook("REGION_LEAVE", "a2_remove", "chambers-a_2_barclear");
+
+-- Boss Bar Progress Room 3
+local a3BossBar = BossBar:new()
+
+function a1_3(data)
+	local player = Player:new(data.player);
+        a3BossBar:createBossBar("Deception: Room Progress")     
+        a3BossBar:setColour("red")
+        a3BossBar:addPlayer(data.player)
+        a3BossBar:setStyle("solid")
+        a3BossBar:setProgress(0.1)
+        a3BossBar:setVisible(true)
+end
+
+function a2_3(data)
+	local player = Player:new(data.player);
+        a3BossBar:setProgress(0.2)
+end
+
+
+function a3_3(data)
+	local player = Player:new(data.player);
+        a3BossBar:setProgress(0.3)
+end
+
+
+function a4_3(data)
+	local player = Player:new(data.player);
+        a3BossBar:setProgress(0.4)
+end
+
+
+function a5_3(data)
+	local player = Player:new(data.player);
+	a3BossBar:setColour("yellow")
+        a3BossBar:setProgress(0.5)
+end
+
+function a6_3(data)
+	local player = Player:new(data.player);
+        a3BossBar:setProgress(0.6)
+end
+
+function a7_3(data)
+	local player = Player:new(data.player);
+        a3BossBar:setProgress(0.7)
+end
+
+function a8_3(data)
+	local player = Player:new(data.player);
+        a3BossBar:setProgress(0.8)
+end
+
+function a9_3(data)
+	local player = Player:new(data.player);
+        a3BossBar:setProgress(0.9)
+end
+
+function a10_3(data)
+	local player = Player:new(data.player);
+	a3BossBar:setColour("green")
+        a3BossBar:setProgress(1)
+end
+
+function a3_remove(data)
+	local player = Player:new(data.player);
+        a3BossBar:setVisible(false)
+end
+
+registerHook("REGION_ENTER", "a1_3", "chambers-a_b3_1");
+registerHook("REGION_ENTER", "a2_3", "chambers-a_b3_2");
+registerHook("REGION_ENTER", "a3_3", "chambers-a_b3_3");
+registerHook("REGION_ENTER", "a4_3", "chambers-a_b3_4");
+registerHook("REGION_ENTER", "a5_3", "chambers-a_b3_5");
+registerHook("REGION_ENTER", "a6_3", "chambers-a_b3_6");
+registerHook("REGION_ENTER", "a7_3", "chambers-a_b3_7");
+registerHook("REGION_ENTER", "a8_3", "chambers-a_b3_8");
+registerHook("REGION_ENTER", "a9_3", "chambers-a_b3_9");
+registerHook("REGION_ENTER", "a10_3", "chambers-a_b3_10");
+registerHook("REGION_LEAVE", "a3_remove", "chambers-a_3_barclear");
