@@ -78,6 +78,26 @@ function e_blind_remove(data)
         EventEngine.player.removePotionEffects(player.name, 'BLINDNESS');
 end
 
+-- Boss Bar Event Progress
+local EventBossBar = BossBar:new()
+
+function event_progress(data)
+	local player = Player:new(data.player);
+        EventBossBar:createBossBar("The Chambers - 40% Ready")     
+        EventBossBar:setColour("blue")
+        EventBossBar:addPlayer(data.player)
+        EventBossBar:setStyle("solid")
+        EventBossBar:setProgress(0.4)
+        EventBossBar:setVisible(true)
+end
+
+function event_progress_remove(data)
+	local player = Player:new(data.player);
+        EventBossBar:setVisible(false)
+        EventBossBar:removeBossBar()
+end
+
+
 registerHook("REGION_ENTER", "spawn_portal_chamber", "survival3-spawn_chambers_tp");
 registerHook("REGION_ENTER", "lobby_map", "survival3-chambers_map");
 registerHook("REGION_ENTER", "lobby_tease", "survival3-chambers_teaser");
