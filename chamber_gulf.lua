@@ -288,7 +288,21 @@ function chamer_g_end(data)
 	        player:clearInventory();
 	        bot:speak( player.name .. " has completed the &3Chamber of Desolation&f.");
                 player:playSound('UI_TOAST_CHALLENGE_COMPLETE', 1, 1);
-	        player:addPermission("runsafe.chambers.golf"); 
+	        player:addPermission("runsafe.chambers.golf");
+	        player:removePermission("runsafe.chambers.ring1");
+	        player:removePermission("runsafe.chambers.ring2");
+	        player:removePermission("runsafe.chambers.ring3");
+	        player:removePermission("runsafe.chambers.ring4");
+	        player:removePermission("runsafe.chambers.ring5");
+	        player:removePermission("runsafe.chambers.ring6");
+	        player:removePermission("runsafe.chambers.ring7");
+	        player:removePermission("runsafe.chambers.ring8");
+	        player:removePermission("runsafe.chambers.ring9");
+	        player:removePermission("runsafe.chambers.ring10");
+	        player:removePermission("runsafe.chambers.ring11");
+	        player:removePermission("runsafe.chambers.ring12");
+	        player:removePermission("runsafe.chambers.ring13");
+	        player:removePermission("runsafe.chambers.ringdoor");
 end
 
 registerHook("REGION_ENTER", "chamer_g_end", "chambers-gulf_end")
