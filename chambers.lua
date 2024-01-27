@@ -146,9 +146,9 @@ local chamber_d = Location:new(world, 5056.551, 105.0, 1091.517);
 chamber_d:setYaw(-89.4);
 chamber_d:setPitch(4.8);
 
-local chamber_e = Location:new(world, 4956.505, 100.0, 1086.511);
-chamber_e:setYaw(89.2);
-chamber_e:setPitch(10.7);
+local chamber_e = Location:new(world, 4853.533, 100.0, 1085.559);
+chamber_e:setYaw(90.0);
+chamber_e:setPitch(-1.8);
 
 local chamber_g = Location:new(world, 2001.500, 184.0, 2175.511);
 chamber_g:setYaw(179.7);
