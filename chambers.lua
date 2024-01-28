@@ -195,7 +195,7 @@ function chamber_e_tp(data)
   local player = Player:new(data.player);
     player:teleport(chamber_e);
     player:setMode("ADVENTURE");
-    player:sendTitle("Welcome To The", "&5Chamber Of tbd");
+    player:sendTitle("Welcome To The", "&5Chamber Of Observation");
     player:playSound('ENTITY_EVOCATION_ILLAGER_PREPARE_SUMMON', 1, 0.5);
     player:clearInventory();
 end
