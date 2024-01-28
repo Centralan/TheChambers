@@ -288,7 +288,7 @@ function chambers_sign_e1(data)
 	if player:hasPermission("runsafe.chambers.echo") then
 	   for index, key in ipairs(p1eblocks) do
            key:setBlock(133, p1beurrent);
-           e:setSign('Chamber Of', 'tbd:', '', 'Completed');
+           e:setSign('Chamber Of', 'Observation:', '', 'Completed');
 		end
 	end
 end
@@ -298,7 +298,7 @@ function chambers_sign_e2(data)
 	if not player:hasPermission("runsafe.chambers.echo") then
 	   for index, key in ipairs(p1eblocks) do
            key:setBlock(152, p1ecurrent);
-           e:setSign('Chamber Of', 'tbd:', '', 'NO DATA');
+           e:setSign('Chamber Of', 'Observation:', '', 'NO DATA');
 		end
 	end
 end
@@ -526,7 +526,7 @@ function chambers_sign2_e1(data)
 	if player:hasPermission("runsafe.chambers.echo") then
 	   for index, key in ipairs(p2eblocks) do
            key:setBlock(133, p2beurrent);
-           e2:setSign('Chamber Of', 'tbd:', '', 'Completed');
+           e2:setSign('Chamber Of', 'Observation:', '', 'Completed');
 		end
 	end
 end
@@ -536,7 +536,7 @@ function chambers_sign2_e2(data)
 	if not player:hasPermission("runsafe.chambers.echo") then
 	   for index, key in ipairs(p2eblocks) do
            key:setBlock(152, p2ecurrent);
-           e2:setSign('Chamber Of', 'tbd:', '', 'NO DATA');
+           e2:setSign('Chamber Of', 'Observation:', '', 'NO DATA');
 		end
 	end
 end
