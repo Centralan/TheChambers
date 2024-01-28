@@ -43,6 +43,48 @@ function e_align2(data)
 	end
 end
 
+function e_align3(data)
+        local player = Player:new(data.player);
+	if not player:hasPermission("runsafe.chambers.tele1") then
+	  player:sendTitle("", "&3&k0&bThe telescope rotates to the east&3&k0&b");
+          player:playSound('ENTITY_MINECART_INSIDE', 1, 0.5);
+	else
+             if player:hasPermission("runsafe.chambers.tele1") then
+                player:sendTitle("", "&3&k0&bThe telescope is locked in place.&3&k0&b");
+		end
+	end
+end
+
+
+function e_align4(data)
+        local player = Player:new(data.player);
+	if not player:hasPermission("runsafe.chambers.tele1") then
+	  player:sendTitle("", "&3&k0&bThe telescope rotates to the west&3&k0&b");
+          player:playSound('ENTITY_MINECART_INSIDE', 1, 0.5);
+	else
+             if player:hasPermission("runsafe.chambers.tele1") then
+                player:sendTitle("", "&3&k0&bThe telescope is locked in place.&3&k0&b");
+		end
+	end
+end
+
+
+function e_align5(data)
+        local player = Player:new(data.player);
+	if not player:hasPermission("runsafe.chambers.tele1") then
+	  player:sendTitle("", "&3&k0&bThe telescope rotates to the south&3&k0&b");
+          player:playSound('ENTITY_MINECART_INSIDE', 1, 0.5);
+	else
+             if player:hasPermission("runsafe.chambers.tele1") then
+                player:sendTitle("", "&3&k0&bThe telescope is locked in place.&3&k0&b");
+		end
+	end
+end
+
+
 
 registerHook("REGION_ENTER", "e_align", "chambers-e_1");
 registerHook("INTERACT", "e_align2", 143, "chambers", 4775.0, 102.0, 1128.0);
+registerHook("INTERACT", "e_align3", 143, "chambers", 4832.0, 102.0, 1129.0)
+registerHook("INTERACT", "e_align4", 143, "chambers", 4853.0, 102.0, 1048.0)
+registerHook("INTERACT", "e_align5", 143, "chambers", 4772.0, 102.0, 1042.0)
