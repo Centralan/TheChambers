@@ -2,7 +2,7 @@ runsafe.chambers.alpha - Player has completed Deception Chamber
 runsafe.chambers.bravo - Player has completed Mirrors Chamber
 runsafe.chambers.charile - Player has completed Stamina Chamber
 runsafe.chambers.delta - Player has completed Knowledge Chamber
-runsafe.chambers.echo - Player has completed Echo Chamber
+runsafe.chambers.echo - Player has completed Observation Chamber
 runsafe.chambers.foxtrot - Player has completed Foxtrot Chamber
 runsafe.chambers.golf - Player has completed Desolation Chamber
 runsafe.chambers.hotel - Player has completed Hotel Chamber
@@ -24,6 +24,7 @@ runsafe.chambers.ring11 - Desolation Chamber
 runsafe.chambers.ring12 - Desolation Chamber
 runsafe.chambers.ring13 - Desolation Chamber
 runsafe.chambers.ringdoor - Desolation Chamber
+runsafe.chambers.tele1 - Observation Chamber
 
 
 
