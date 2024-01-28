@@ -16,9 +16,33 @@ c_spawn:setPitch(3.6);
 
 function e_align(data)
         local player = Player:new(data.player);
+        if not player:hasPermission("runsafe.chambers.tele1") then
 	  player:sendTitle("", "&3&k0&bThe telescope needs to be aligned&3&k0&b");
           player:playSound('ENTITY_PARROT_IMITATE_ENDERMITE', 1, 0.5);
+	else
+             if player:hasPermission("runsafe.chambers.tele1") then
+                player:sendTitle("", "&3&k0&bThe moon is question looks funny...&3&k0&b");
+		EventEngine.player.addPotionEffect(player.name, 'BLINDNESS', 100, 4);
+                EventEngine.player.addPotionEffect(player.name, 'CONFUSION', 100, 5);
+		player:teleport(c_spawn);
+		player:removePermission("runsafe.chambers.tele1");
+		end
+	end
+end
+
+function e_align2(data)
+        local player = Player:new(data.player);
+	if not player:hasPermission("runsafe.chambers.tele1") then
+	  player:sendTitle("", "&3&k0&bThe telescope rotates to the north&3&k0&b");
+          player:playSound('ENTITY_MINECART_INSIDE', 1, 0.5);
+	  player:addPermission("runsafe.chambers.tele1");
+	else
+             if player:hasPermission("runsafe.chambers.tele1") then
+                player:sendTitle("", "&3&k0&bThe telescope is already aligned&3&k0&b");
+		end
+	end
 end
 
 
 registerHook("REGION_ENTER", "e_align", "chambers-e_1");
+registerHook("INTERACT", "e_align2", 143, "chambers", 4775.0, 102.0, 1128.0);
