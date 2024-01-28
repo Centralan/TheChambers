@@ -14,11 +14,11 @@ c_spawn:setPitch(3.6);
 --Echo 1--
 ---------------------------------
 
-function e_1(data)
-        local player = Player:new(data["player"]);
-	player:sendTitle("&3&k0&bThe telescope needs to be aligned.&3&k0&b");
+function e_align(data)
+        local player = Player:new(data.player);
+	  player:sendTitle("", "&3&k0&bThe telescope needs to be aligned&3&k0&b");
           player:playSound('ENTITY_PARROT_IMITATE_ENDERMITE', 1, 0.5);
 end
 
 
-registerHook("REGION_ENTER", "e_1", "chambers-e_1");
+registerHook("REGION_ENTER", "e_align", "chambers-e_1");
