@@ -38,7 +38,7 @@ function e_align2(data)
 	  player:addPermission("runsafe.chambers.tele1");
 	else
              if player:hasPermission("runsafe.chambers.tele1") then
-                player:sendTitle("", "&3&k0&bThe telescope is already aligned&3&k0&b");
+                player:sendTitle("", "&3&k0&bThe telescope is locked in place.&3&k0&b");
 		end
 	end
 end
