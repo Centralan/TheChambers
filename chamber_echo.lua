@@ -10,6 +10,10 @@ local c_spawn = Location:new(world, 5000.491, 96.0, 500.597);
 c_spawn:setYaw(-135.9);
 c_spawn:setPitch(3.6);
 
+local e2_spawn = Location:new(world, 5000.491, 96.0, 500.597);
+e2_spawn:setYaw(-135.9);
+e2_spawn:setPitch(3.6);
+
 ---------------------------------
 --Echo 1--
 ---------------------------------
@@ -24,7 +28,7 @@ function e_align(data)
                 player:sendTitle("", "&3&k0&bThe moon is question looks funny...&3&k0&b");
 		EventEngine.player.addPotionEffect(player.name, 'BLINDNESS', 100, 4);
                 EventEngine.player.addPotionEffect(player.name, 'CONFUSION', 100, 5);
-		player:teleport(c_spawn);
+		player:teleport(e2_spawn);
 		player:removePermission("runsafe.chambers.tele1");
 		end
 	end
@@ -77,7 +81,7 @@ function e_align5(data)
 	else
              if player:hasPermission("runsafe.chambers.tele1") then
                 player:sendTitle("", "&3&k0&bThe telescope is locked in place.&3&k0&b");
-		end
+              end
 	end
 end
 
