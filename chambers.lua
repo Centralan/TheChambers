@@ -10,6 +10,7 @@ local bot = AI:new("ATLAS", "AI", "Chambers");
 --Enter--
 ---------
 
+
 local spawn_enter = Location:new(world, 5000.491, 184.0, 500.597);
 spawn_enter:setYaw(128.0);
 spawn_enter:setPitch(25.8);
@@ -17,8 +18,6 @@ spawn_enter:setPitch(25.8);
 local tease1 = Location:new(world2, 19631.513, 53.0, -20828.415);
 tease1:setYaw(-179.4);
 tease1:setPitch(9.8);
-
-local teaseBar = BossBar:new()
 
 function spawn_portal_chamber(data)
   local player = Player:new(data.player);
@@ -30,7 +29,7 @@ function welcome_1(data)
         local player = Player:new(data["player"]);
         EventEngine.player.addPotionEffect(player.name, 'BLINDNESS', 100, 4);
 	player:sendTitle("&a&lWelcome To", "&2&lThe Chambers");
-	player:setMode("ADVENTURE");
+        player:setMode("ADVENTURE");
         player:playSound('ENTITY_SHULKER_AMBIENT', 1, 0.5);
         player:addPermission("runsafe.warp.use.chambers");
 end
@@ -48,22 +47,10 @@ function lobby_map(data)
         player:setHealth(14);
 end
 
-function lobby_tease(data)
-        local player = Player:new(data["player"]);
+function lobby_tease3(data)
+        local player = Player:new(data.player);
 	player:sendTitle("", "&e&lSoon");
 	player:playSound('ENTITY_PARROT_IMITATE_VEX', 1, 0.5);
-	teaseBar:createBossBar("&6Event Progress")     
-        teaseBar:setColour("blue")
-        teaseBar:addPlayer(data.player)
-        teaseBar:setStyle("solid")
-        teaseBar:setProgress(0.4)
-        teaseBar:setVisible(true)
-end
-
-
-function lobby_tease_clear(data)
-	local player = Player:new(data.player);
-        teaseBar:setVisible(false)
 end
 
 function lobby_tease2(data)
@@ -78,30 +65,9 @@ function e_blind_remove(data)
         EventEngine.player.removePotionEffects(player.name, 'BLINDNESS');
 end
 
--- Boss Bar Event Progress
-local EventBossBar = BossBar:new()
-
-function event_progress(data)
-	local player = Player:new(data.player);
-        EventBossBar:createBossBar("The Chambers - 40% Ready")     
-        EventBossBar:setColour("blue")
-        EventBossBar:addPlayer(data.player)
-        EventBossBar:setStyle("solid")
-        EventBossBar:setProgress(0.4)
-        EventBossBar:setVisible(true)
-end
-
-function event_progress_remove(data)
-	local player = Player:new(data.player);
-        EventBossBar:setVisible(false)
-        EventBossBar:removeBossBar()
-end
-
-
-registerHook("REGION_ENTER", "spawn_portal_chamber", "survival3-spawn_chambers_tp");
+--registerHook("REGION_ENTER", "spawn_portal_chamber", "survival3-spawn_chambers_tp");
 registerHook("REGION_ENTER", "lobby_map", "survival3-chambers_map");
-registerHook("REGION_ENTER", "lobby_tease", "survival3-chambers_teaser");
-registerHook("REGION_ENTER", "lobby_tease_clear", "survival3-chambers_teaser");
+registerHook("REGION_ENTER", "lobby_tease3", "survival3-chambers_teaser");
 registerHook("REGION_ENTER", "lobby_tease2", "survival3-chambers_e_1")
 registerHook("REGION_LEAVE", "e_blind_remove", "survival3-spawn_event_room")
 registerHook("REGION_ENTER", "welcome_1", "chambers-welcome1");
@@ -122,7 +88,7 @@ end
 
   registerHook("REGION_ENTER", "c_fall", "chambers-catch_fall");
   registerHook("REGION_ENTER", "c_fall", "chambers-catch2"); --rabbition catch
-  registerHook("REGION_ENTER", "c_fall", "chambers-thall_catch"); --thall airship catch
+  --registerHook("REGION_ENTER", "c_fall", "chambers-thall_catch"); --thall airship catch
 
 ----------------
 --Chamber tp's--
@@ -209,11 +175,9 @@ function chamber_g_tp(data)
     player:clearInventory();
 end
 
-
-registerHook("REGION_ENTER", "chamber_a_tp", "chambers-chamber_a")
-registerHook("REGION_ENTER", "chamber_b_tp", "chambers-chamber_b")
-registerHook("REGION_ENTER", "chamber_c_tp", "chambers-chamber_c")
-registerHook("REGION_ENTER", "chamber_d_tp", "chambers-chamber_d")
-registerHook("REGION_ENTER", "chamber_e_tp", "chambers-chamber_e")
-registerHook("REGION_ENTER", "chamber_g_tp", "chambers-chamber_g")
-
+--registerHook("REGION_ENTER", "chamber_a_tp", "chambers-chamber_a")
+--registerHook("REGION_ENTER", "chamber_b_tp", "chambers-chamber_b")
+--registerHook("REGION_ENTER", "chamber_c_tp", "chambers-chamber_c")
+--registerHook("REGION_ENTER", "chamber_d_tp", "chambers-chamber_d")
+--registerHook("REGION_ENTER", "chamber_e_tp", "chambers-chamber_e")
+--registerHook("REGION_ENTER", "chamber_g_tp", "chambers-chamber_g")
